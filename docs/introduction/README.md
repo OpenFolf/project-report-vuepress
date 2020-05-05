@@ -2,25 +2,29 @@
 
 ## openFOLF
 
-This report describes the final project for a BSc in computer science from Reykjavik University. The goal is to create a Progressive Web App that frisbee golf players can use while they play, to enhance their experience. The application will be named openFOLF (in this report from now on referred to as the application).
+This report describes the final project for a BSc in computer science from Reykjavik University. The goal was to create a Progressive Web App that disc golf players can use while they play, to enhance their experience. The application was named openFOLF (in this report from now on referred to as the application).
 
 ## The problem
 
-Disc golf, also known as Frisbee golf, and commonly referred to as folf in Iceland (In this report from now on referred to as folf), is enjoying ever increasing popularity worldwide. It is a popular and healthy way to enjoy the outdoors with friends. But there can be a problem when tallying the points and determining the winner, both for current and past games. This is something the application aims to help with.
+Disc golf, also known as Frisbee golf, and commonly referred to as folf in Iceland (in this report from now on referred to as folf), is enjoying ever increasing popularity worldwide. It is a popular and healthy way to enjoy the outdoors with friends. But there can be a problem when tallying the points and determining the winner, both for current and past games. This is something the application aims to help with.
 
-There have been a few folf apps made but nothing has managed to become the standard app among folf players in Iceland. We aim to achieve that by developing a progressive web application that will be open source and available for free online, instead of developing a platform specific mobile app. The hope is that it will succeed, where others have seen less success, in becoming the standard companion app for folf players.
+There have been a few folf apps made but nothing has managed to become the standard app among folf players in Iceland. Our aim was to achieve that by developing a progressive web application that will be open source and available for free online, instead of developing a platform specific mobile app. Enabling users to have a unified experience across different devices and platforms.
 
-In a nutshell, the project aims to deliver a companion progressive web application with features such as:
+## Proposed solution
 
-- Keep track of scores
-- Creating a tournament among friends
-- See an overview of the holes that lay ahead on the course
+We set out to create an application that does not get in the way, a true utility tool to enhance the user’s enjoyment of the game.
+
+In a nutshell, the project aimed to deliver a companion progressive web application with features such as:
+
+- Keep track of score in game
+- Playing against friends
+- Get par info for every hole
 - Locate the nearest disc golf course
 - Keep track of score history
-- Compare yourself with other players
+- See score updates in real time
 
-In this project we intend to focus on a few courses in Reykjavik and thereby creating a template which would enable us to rather easily add more courses to the application later.
+In this project we focused on developing the core functionality like keeping score and displaying basic course information. The plan is then later to easily be able to add features and data regarding courses as the application user base grows.
 
-Folf has become very popular in Iceland. Initially we see our user group as mainly being folf players in Iceland, with plans to move globally later.
+Folf has become quite popular and we see our user group as mainly being folf players in Iceland.
 
-We plan on using Vue.js, a frontend JavaScript framework, to build the user interface. The design is a progressive web application for mobile users. The JAM stack methodology and workflows will be used to connect the front-end to the back-end, with the back-end consisting of a collection of microservices set up through Amazon Web Services. This way the application will be scalable according to usage.
+We used Vue.js, a front-end JavaScript framework, to build the user interface. The design is a progressive web application for mobile users. The Jamstack methodology and workflows were used to connect the front-end to the back-end, with the back-end consisting of a collection of microservices set up through Amazon Web Services. This way the application will be scalable according to usage.
