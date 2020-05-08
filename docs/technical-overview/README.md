@@ -6,7 +6,11 @@ In this chapter we first show the flow diagram of the application that shows how
 
 Since we are making a progressive web application, openFOLF can be thought of as two domains, the website and the application. When a user goes to [openFOLF.net](https://www.openfolf.net/) he will be greeted with the landing page. There he will find general information about openFOLF (in this report from now on referred to as the website). When he clicks the “launch app” button he will be transferred to the application hosted on [app.openFOLF.net](https://app.openfolf.net/), that is a self-containing ecosystem that can be used as any other native app. Ideally a user would open [app.openFOLF.net](https://app.openfolf.net/) and save it to his home screen.
 
-Figure 1 Flow diagram of the website openfolf.net and the application hosted at app.openfolf.net
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/flow-diagram.png" alt="Flow Diagram for openFOLF.net"  />
+</div>
+
+_Figure 1:_ Flow diagram of the website **openfolf.net** and the application hosted at **app.openfolf.net**
 
 ## Jamstack
 
@@ -82,7 +86,11 @@ For the front-end of the application we were looking for something approachable,
 
 For the back-end of the application we used different services from Amazon Web Services (AWS). Amazon S3 was used to store the Vue.js front-end. CloudFront is a web service that was used to speed up distribution of our front-end by delivering our content through a worldwide network of data centers. Route53 addresses domain service requests to our website. Amazon Cognito was used for both the user and API authentication. We started out planning to map out all our API endpoints through Amazon API gateway but in sprint 3 decided to add GraphQL through AWS AppSync to our stack. The data is then stored in the NoSQL database from Amazon called DynamoDB.
 
-Figure 2 Technical stack
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/tech-stack.png" alt="Tech Stack for openFOLF.net"  />
+</div>
+
+_Figure 2:_ Technical stack
 
 ## Database
 
@@ -104,7 +112,11 @@ For our NoSQL database we are using DynamoDB from Amazon Web Services. With Dyna
 
 In order to better visualize the relationship between the data we needed to organize into our database we drew an Entity Relationship Diagram. At the center of our data scheme is the player who plays a game. Each player is represented by a single user but each user can be a player in different games. Each game as a course the game is played on but each course can be played in many different games. For each course there exist any number of holes but holes belong to a single course only.
 
-Figure 3 ER diagram
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/er-diagram.png" alt="ER Diagram for openFOLF.net"  />
+</div>
+
+_Figure 3:_ ER diagram
 
 ### GraphQL
 

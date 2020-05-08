@@ -8,9 +8,15 @@ Next is a subchapter on testing. We decided to perform usability testing to help
 
 At the end of the chapter we name some of the improvements that we were not able to implement before hand in but will be prioritized when moving forward with the application.
 
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/wireframe.png" alt="Early wireframe for openFOLF.net" />
+</div>
+
+_Figure 4:_ Early wireframe
+
 ## Design Process
 
-Figure 4 is an illustration of the first draft of the application after sprint 0. More wireframes and screenshots of the application throughout the process can be viewed in the appendix. In the following subchapters the design process of some of the main features of the application trough out the semester. This will include some discussion and references to relevant pictures in the appendix.
+_Figure 4_ is an illustration of the first draft of the application after sprint 0. More wireframes and screenshots of the application throughout the process can be viewed in the appendix. In the following subchapters the design process of some of the main features of the application trough out the semester. This will include some discussion and references to relevant pictures in the appendix.
 
 ### Early drafts
 
@@ -187,10 +193,30 @@ When users were asked what they would most like to add to an application like th
 
 In general, the usability testing helped us move the app design forward and has given us a road map on how to continue the development of the application.
 
+---
+
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/home.png" alt="Iteration 3 - The Home screen"  />
+</div>
+
+_Figure 5:_ Iteration 3. The Home screen
+
 ## Latest design iteration
 
 All the user testing, though focused on usability, found a lot of breaking bugs that the team was able to address and fix. Moreover, we got a lot of good feedback and ideas, some of which we were able to implement, others that will have to be implemented later and still others that do not fit the application or its scope. The aim from the start had been to be able to update the scorecard dynamically and at the end of sprint 3 we were able to make this work. By sprint 6 we were realizing that we could utilize this technology to a greater extent by combining it with the Vuex state management and Vue.js’s internal routing. By doing so, it solved much of our past worries about what would happen if the owner quit mid game or if a user would temporarily lose network connection (see alternative flow for use cases 7 and 8). For example, if one user in a group loses connection temporarily and the application is closed. If that happens, he can sign back in and from join game enter the lobby code again, he is then redirected back to the score card. That, or other team members register his score.
 
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/scorecard.png" alt="Iteration 3 - The Scorecard"  />
+</div>
+
+_Figure 6:_ Iteration 3. The Scorecard
+
 By the end of the semester most notable UI considerations had been addressed. The team was able to implement all but one A requirement and implementing those were a priority. Figures depicting the latest iteration, iteration 3 can be viewed in Appendix 3. But further UI improvements must be done in the future that were not, given the time frame, within scope. Some are simple to implement, such as adding a loading bar to give the user visual feedback when pages are loading. A few have been mentioned above in results from the test. Another is to rewrite the scorecard component, because when addressing problems from user testing with the scorecard in iteration 2 we made a lot of changes, so much so that it introduced new problems. But we acknowledged from the start that the scorecard was the component within the app that would have to go through the most iterations, because users will spend most of their time interacting with that component. But one issue that must be resolved is to make it clearer on which hole the player is playing. Then there is the idea of further improvements to the scorecard, that is to create a menu for the zigzag button, the light/dark mode toggle and to add a button that opens a map of the course. Folf.is has course overviews of almost all folf courses in Iceland, and with their permission we would like to add it to the app. This would improve usability considerably since knowing where the next tee is not always obvious for new players.
+
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/lobby.png" alt="Iteration 3 - The Pre-Game Lobby"  />
+</div>
+
+_Figure 7:_ Iteration 3. The pre-game Lobby
 
 These changes are going to be top priority of the next iteration of the application.
