@@ -1,6 +1,6 @@
 # Work Arrangement
 
-This chapter briefly lists what methodology the team used while working on the application, its workspace and how internal communication and documentation was conducted.
+This chapter briefly lists what methodology the team used while working on the _application_, its workspace and how internal communication and documentation was conducted.
 
 ## Methodology
 
@@ -20,6 +20,6 @@ Two of the three team members are family men and one of which had a full-time jo
 
 ## Technical Environment and documentation
 
-Slack was used for communication within the team. For file management and documentation, we used Google drive, docs and sheets. Working with cloud computing allowed all team members to work on documents regardless of their OS. GitHub was used for hosting our version control and the collaboration tool Trello was our digital Scrum board. After the COVID-19 outbreak we used Microsoft Teams for video conferencing.
+Slack was used for communication within the team. For file management and documentation, we used Google drive, Docs and Sheets. Working with cloud computing allowed all team members to work on documents regardless of their OS. GitHub was used for hosting our version control and the collaboration tool Trello was our digital Scrum board. After the COVID-19 outbreak we used Microsoft Teams for video conferencing.
 
-For setting up our continuous delivery system we used AWS amplify, a service provided by Amazon Web Services, which enables you to set up your GitHub repo for continuous delivery to the web.
+For setting up our continuous delivery system we used _AWS Amplify_, a service provided by _Amazon Web Services_, which enables you to set up your _GitHub_ repo for continuous delivery to the web.
