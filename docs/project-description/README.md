@@ -1,16 +1,14 @@
 # Project Description
 
-In this chapter we list the project description and the requirements that were made before work began on the application. That is done in three ways. First, we list the expected user groups according to their importance and priority. Next we list its functional and non-functional requirements. The chapter ends with use cases for A requirements and some edge cases.
+In this chapter we list the project description and the requirements that were made before work began on the _application_. That is done in three ways. First, we list the expected user groups according to their importance and priority. Next we list its functional and non-functional requirements. The chapter ends with use cases for A requirements and some edge cases.
 
 ## User groups
 
-We analyzed the user base and split it into five different user groups. First is the casual folf player, that is the most important group we are trying to serve with the application. These are the players that only play a few rounds a year. To make the application appealing to this group it has, first and foremost, to be easy and straightforward to use. A new user must be able to use the application to see a list of courses, then go to a course and start registering his score as easily as possible.
+We analyzed the user base and split it into five different user groups. First is the casual _folf_ player, that is the most important group we are trying to serve with the _application_. These are the players that only play a few rounds a year. To make the _application_ appealing to this group it has, first and foremost, to be easy and straightforward to use. A new user must be able to use the _application_ to see a list of courses, then go to a course and start registering his score as easily as possible.
 
-Another user group is the dedicated folf players and is of medium importance. This user group overlaps with the casual players but differs not only in how often they play, but in what they expect from and how they would use the application. They would use the application not only to register the score, but also to track their progress in the game and would like to register as much data as possible. In interviews for example one interviewee said it would be crucial for this kind of application to be able to track what discs he used for each hole. So, gathering statistics and being able to have different view models of statistics is important for this group. They are also more familiar with the game and would like to be able to play different variants of games.
+Another user group is the _dedicated folf_ players and is of medium importance. This user group overlaps with the casual players but differs not only in how often they play, but in what they expect from and how they would use the _application_. They would use the _application_ not only to register the score, but also to track their progress in the game and would like to register as much data as possible. In interviews for example one interviewee said it would be crucial for this kind of application to be able to track what discs he used for each hole. So, gathering statistics and being able to have different view models of statistics is important for this group. They are also more familiar with the game and would like to be able to play different variants of games.
 
-Tournament directors and tournament players are also a user group we would like to serve but has been classed with low importance. The reason is that doing so would expand the scope of the application beyond what can be achieved in a space of one semester. Our perception is that these features must be flawless and super easy to use or not implemented at all. First, we would have to implement an interface for the tournament directors that would allow them to create a schedule, order players in groups, allow them to view players score, change the score and so on. This interface would likely be used on computers and not mobiles and that would have to factor into the design. Considerations for tournament players is getting an overview of the tournament, tee times and score. Also, there would be restrictions on how they would register score, where each player in a group is responsible for registering other players score. Because of how different these features are from the Minimum Viable Product requirements seen in chapter 4.2.1 and would effectively change the application from being an app to register score to a tournament management application. Because of this we decided against implementing these features for now.
-
-The last user group is code contributors. This group is important for the longevity of the application. Both to keep information that is not provided by the API correct but also to further improve the application, add functionality. To serve this group the application’s GitHub site must have documentation and the code must be well documented. Though it is within the realm of possibility that code contributors would propose and create pull requests with major changes to the application’s code base, we assume that in the beginning most changes would be minor fixes or changes to the layout. Therefore, having a well commented code for the team to be active on the GitHub’s issue page should go a long way to help contributors to understand the code and feel comfortable to make changes. It is important to have proper documentation on the technical environment and its source code. The workflow needs to be clear and that’s why we modelled it on [https://opensource.guide/](https://opensource.guide/).
+_Tournament directors_ and _tournament players_ are also a user group we would like to serve but has been classed with low importance. The reason is that doing so would expand the scope of the _application_ beyond what can be achieved in a space of one semester. Our perception is that these features must be flawless and super easy to use or not implemented at all. First, we would have to implement an interface for the tournament directors that would allow them to create a schedule, order players in groups, allow them to view players score, change the score and so on. This interface would likely be used on computers and not mobiles and that would have to factor into the design. Considerations for tournament players is getting an overview of the tournament, tee times and score. Also, there would be restrictions on how they would register score, where each player in a group is responsible for registering other players score. Because of how different these features are from the Minimum Viable Product requirements seen in chapter 4.2.1 and would effectively change the _application_ from being an app to register score to a tournament management application. Because of this we decided against implementing these features for now.
 
 ---
 
@@ -139,99 +137,126 @@ The last user group is code contributors. This group is important for the longev
 - **View event time and relevant tournament information**
 - **View statistics**
 
----
-
-### Code contributor
-
-**Importance**: Medium/Low.
-
-### Background
-
-- **Age**: Teenager and older.
-- **Gender**: All.
-- **Education**: Some software skills, and knowledge of GitHub.
-- **Technical exp**: Usually good.
-
-### Use of the system
-
-- **Use**: All year around.
-- **Training**: None but need documentation on how-to.
-- **Number of users**: Few.
-
-### Context
-
-- **Technical environment**: Laptops/computers. Code editors and network connection.
-- **Real environment**: Personal computers.
-- **Other environment**: At home or at work.
-
-### Main tasks
-
-- **Add new courses**
-- **Add new types of games**
-- **Change UI**
-- **Make contribution to design and functionality**
-
 ## Requirements
 
-The application requirements are separated first into functional requirements that are further divided into A, B and C priorities, with the C requirements being requirements that we deem highly unlikely to be fulfilled. Then we list the Non-Functional Requirements that are divided in the same way. They also show which use case they belong to and the status of the requirement. Note that for most of the non-functional requirements use cases are not especially listed because of how general they are.
+The _application_ requirements are separated first into functional requirements that are further divided into A, B and C priorities, with the C requirements being requirements that we deem highly unlikely to be fulfilled. Then we list the Non-Functional Requirements that are divided in the same way. They also show which use case they belong to and the status of the requirement. Note that for most of the non-functional requirements use cases are not especially listed because of how general they are.
 
 After sprint 2 we decided to stop changing the numbering of those requirements already on the list even if a new one was added in order to link the use cases in chapter 4.3 to individual requirements and vice versa. As expected, new requirements have been added after that time, considering new insights from interviews and user testing. Those requirements are marked 100 something if deemed A requirement, 200 for B and 300 for C and 400 for non-functional requirements as well as being highlighted especially.
 
-The functional requirement in listed in 4.2.1 – 4.2.3 are set up in the format “As a **User group** I want to be able to **Operation** so I can **Achievement**”. The non-functional requirements in chapter 4.2.4 are of the format The application **must/shall** **Achievement**.
-
-Note that only A requirements are shown here. B and C requirements can be viewed in Appendix 1.
+The functional requirement in listed in _**"Minimal Viable Product"**_ are set up in the format “As a **User group** I want to be able to **Operation** so I can **Achievement**”. The non-functional requirements in chapter 4.2.4 are of the format the _application_ **must/shall** **Achievement**.
 
 ## Minimum Viable Product
 
 ### A - Requirements
 
-| No. | User stories                                                                                                                                                                                                                    | Priority (A/B/C) | Use Case | Status |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------- | ------ |
-| 1   | As a user, I want to be able to sign up so I can log in.                                                                                                                                                                        | A                | 1        | Done   |
-| 2   | As a user, I want to be able to log in so I can keep track of my history. E.g. scores, courses played and players/users.                                                                                                        | A                | 2        | Done   |
-| 3   | As a user, I want to be able keep track of my score when playing a certain course, so I can keep track of how well I am doing.                                                                                                  | A                | 7        | Done   |
-| 4   | As a user, I want to be able to log my score, even without an internet connection.                                                                                                                                              | A                | 9, 10    |        |
-| 5   | As a user, I want to be able to choose what course I am about to play so I can log the score for that course.                                                                                                                   | A                | 3, 9, 10 | Done   |
-| 6   | As a user I want to be able to create a new game with a scorecard only for me, so I can play alone.                                                                                                                             | A                | 7        | Done   |
-| 7   | As a user, I want to be able to create a new game that other users can join and have a mutual score card that anyone in the group can edit.                                                                                     | A                | 4        | Done   |
-| 8   | As a user, I want to be able to join a game that another player has set up, so we can have a mutual score card.                                                                                                                 | A                | 5, 6     | Done   |
-| 9   | As a user, when playing folf with other users, I want to be able to log my score and the score of other users. I want the score card to update in real time. That way, anyone in the group can log and view each other's score. | A                | 8        | Done   |
-| 10  | As a user, I want to be able to see all the information that my fellow players are logging in real time so I can see how the game is going in real time.                                                                        | A                | 8        | Done   |
-| 11  | As a user, I want to be able to log my score on a single page, so I do not have to jump between different pages, giving me increased overview of the game and not burdening my mental capacity to play well.                    | A                | 7        | Done   |
-| 12  | As a user, I would like to have an on-screen keyboard on the score card when using a mobile device, so I don’t have to open and close the default OS keyboard each time I log or edit a score.                                  | A                | 7        | Done   |
+| No.    | User stories                                                                                                                                                                                                                    | Priority (A/B/C) | Use Case | Status |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------- | ------ |
+| **1**  | As a user, I want to be able to sign up so I can log in.                                                                                                                                                                        | A                | 1        | Done   |
+| **2**  | As a user, I want to be able to log in so I can keep track of my history. E.g. scores, courses played and players/users.                                                                                                        | A                | 2        | Done   |
+| **3**  | As a user, I want to be able keep track of my score when playing a certain course, so I can keep track of how well I am doing.                                                                                                  | A                | 7        | Done   |
+| **4**  | As a user, I want to be able to log my score, even without an internet connection.                                                                                                                                              | A                | 9, 10    |        |
+| **5**  | As a user, I want to be able to choose what course I am about to play so I can log the score for that course.                                                                                                                   | A                | 3, 9, 10 | Done   |
+| **6**  | As a user I want to be able to create a new game with a scorecard only for me, so I can play alone.                                                                                                                             | A                | 7        | Done   |
+| **7**  | As a user, I want to be able to create a new game that other users can join and have a mutual score card that anyone in the group can edit.                                                                                     | A                | 4        | Done   |
+| **8**  | As a user, I want to be able to join a game that another player has set up, so we can have a mutual score card.                                                                                                                 | A                | 5, 6     | Done   |
+| **9**  | As a user, when playing folf with other users, I want to be able to log my score and the score of other users. I want the score card to update in real time. That way, anyone in the group can log and view each other's score. | A                | 8        | Done   |
+| **10** | As a user, I want to be able to see all the information that my fellow players are logging in real time so I can see how the game is going in real time.                                                                        | A                | 8        | Done   |
+| **11** | As a user, I want to be able to log my score on a single page, so I do not have to jump between different pages, giving me increased overview of the game and not burdening my mental capacity to play well.                    | A                | 7        | Done   |
+| **12** | As a user, I would like to have an on-screen keyboard on the score card when using a mobile device, so I don’t have to open and close the default OS keyboard each time I log or edit a score.                                  | A                | 7        | Done   |
+
+### B - Secondary Goals
+
+| No.     | User stories                                                                                                                                                                                                                 | Priority (A/B/C) | Use Case | Status |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------- | ------ |
+| **13**  | As a user, I would like to be able to see all sorts of statistics about how I have been playing so I can track my improvements.                                                                                              | B                | 8        |        |
+| **14**  | As a user, I want to be able to see the history of all the games I have played, so I can see where I played, when and with whom.                                                                                             | B                | 8        | Done   |
+| **15**  | As a user, I want to be able to select different types of games to play (Nassau, Match Play, Skins game etc.).                                                                                                               | B                |          |        |
+| **16**  | As a user, I want to be able to register other players as my friends, so I can see who my friends are in the app.                                                                                                            | B                | 11       |        |
+| **17**  | As a user, I want to be able to send an invite link to other players so they can join me in a game. (If a player is not a user, he/she should be made to go through sign-up process first). So, we can start playing sooner. | B                | 11       |        |
+| **18**  | As a user, I want to be able to be signed in immediately after I confirm my e-mail address, so I do not have to go through the log-in process again.                                                                         | B                |          |        |
+| **19**  | As a user, I want to be able to see an overview picture of each basket, so I can better decide how to play it.                                                                                                               | B                |          |        |
+| **20**  | As a user, I want to be able to have a public profile, so others can see my openFolf profile.                                                                                                                                | B                |          |        |
+| **21**  | As a user, I want to be able to customize the core features of the app, so I can decide on what is seen on the initial page. E.g. shortcuts and features I use all the time.                                                 | B                |          |        |
+| **22**  | As a user, I want to be able to choose a username so I can be identified by my openFOLF name.                                                                                                                                | B                |          |        |
+| **23**  | As a user, I would like to get a suggestion for a username when I sign-up, so I don’t have to choose a username.                                                                                                             | B                |          |        |
+| **24**  | As a user, I want to be able to donate money to the openFOLF project so I can continue using the web app without worries of ads or subscription models in the future.                                                        | B                |          |        |
+| **201** | As a user, I want to be able to add user to my friend list from the lobby so we can start a game faster in the future.                                                                                                       | B                | 12       |        |
+
+### C - Tertiary Goals
+
+| No.     | User stories                                                                                                                                                                                                                                 | Priority (A/B/C) | Use Case | Status |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------- | ------ |
+| **25**  | As a user, I would like to share the geo-location feature on my phone to see what courses are near me so I can find a course to play.                                                                                                        | C                | 3, 10    | Done   |
+| **26**  | As a user, I want to be able to use the app to see distances, my location relevant to the basket, so I know how far I must throw the disk.                                                                                                   | C                |          |        |
+| **27**  | As a user, I want to be able to use the app to see in what direction the basket is relevant to my location so I know where it’s at if it is obscured from my line of sight.                                                                  | C                |          |        |
+| **28**  | As a user, I want to be able to register a folf course that is not in the app yet so I can log scores on any course I want.                                                                                                                  | C                |          |        |
+| **29**  | As a user, I want to be able to register a new course in the app. Just by giving it a name and by registering the GPS coordinates of the basket so I can add any courses not yet registered in the app.                                      | C                |          |        |
+| **30**  | As a code contributor, I want to be able to add a new course by adding to the source code that is publicly available on the openFOLF GitHub repository.                                                                                      | C                |          |        |
+| **31**  | As a user, I want to be able to join a game with a QR code so I can join a game easily.                                                                                                                                                      | C                | 6        |        |
+| **32**  | As a user, I want to be able to add a new friend with a QR code so I can add new friends easily.                                                                                                                                             | C                |          |        |
+| **33**  | As a user, I would like to get pro-tips regarding how best to play each basket so I can best plan how to play the basket.                                                                                                                    | C                |          |        |
+| **34**  | As a user, I want to be able to access the official folf rules so I can learn how to play and quickly look up rules if any disagreements arise during game play.                                                                             | C                |          |        |
+| **35**  | As a user, I want to be able to access the rules of the game and any guides on different aspects of the game.                                                                                                                                | C                |          |        |
+| **36**  | As a user, I want to be able to easily find folf related news through the app so I can be up to date on all things frisbee golf related.                                                                                                     | C                |          |        |
+| **37**  | As a user, I want to be able to go to either openfolf.net or www.openfolf.net to learn about what openFOLF is.                                                                                                                               | C                |          | Done   |
+| **38**  | As a user, I want to be able to log what discs I used while playing a certain basket so I can keep track on how I played that basket in the past.                                                                                            | C                |          |        |
+| **39**  | As a user, I want to be able to change the score for a game that has already been played.                                                                                                                                                    | C                | 7, 8, 9  |        |
+| **40**  | As a user, I want to be able to stop playing in the middle of a game without saving the score to the database/history.                                                                                                                       | C                |          |        |
+| **41**  | As a user, I want to be able to look at the history of other users on openFOLF that are on my friends list.                                                                                                                                  | C                |          |        |
+| **42**  | As a user, I want to be able to see what the average score of other players on the course is.                                                                                                                                                | C                |          |        |
+| **43**  | As a user, I want to be able to see how many players are currently playing certain course to get a rough estimate on if the course is too crowded.                                                                                           | C                |          |        |
+| **44**  | As a user, I want to be able to access an openFOLF API and directly access all my data so I can use it in whatever purpose I want.                                                                                                           | C                |          |        |
+| **45**  | As a user of another app, I want to be able to easily import my game history into openFOLF, so I can easily switch apps.                                                                                                                     | C                |          |        |
+| **46**  | As a user, I want to be able to post my score on Facebook (social media) so I can share with people how good at folf I am.                                                                                                                   | C                |          |        |
+| **47**  | As a user, I want to be able to sign up by other means. E.g. Facebook, Google etc... So, I don’t have to have an openFOLF profile.                                                                                                           | C                |          |        |
+| **48**  | As a user, I would like the program to suggest a handicap while competing with others, so competition with others can be fairly measured even though we are at different skill levels.                                                       | C                |          |        |
+| **49**  | As a user that has a registered handicap, I want to be able to see directly how many points I will get for the basket.                                                                                                                       | C                |          |        |
+| **50**  | As a user, I would like to register my discs in the app so I can see my own collection and share them with other users.                                                                                                                      | C                |          |        |
+| **51**  | As a user, when adding score to the score card I would like to be able to register what discs I used for each basket so I can see statistics of what discs I use the most and see what discs I used the last time I played a certain basket. | C                |          |        |
+| **52**  | As a user, I want to be able to see a bird's eye view of how the course looks.                                                                                                                                                               | C                |          |        |
+| **53**  | As a user, I want to be able to access the mobile phone camera through the app to take a picture I can save with the game I just played so I can attach a photo to the log of the game.                                                      | C                |          |        |
+| **54**  | As a user, I want to see how the weather forecast is for the course I am about to play so I can judge the conditions correctly.                                                                                                              | C                |          |        |
+| **55**  | As a user, I want to be able to see how the weather has historically influenced my scores so I can see how well I do in certain weather conditions.                                                                                          | C                |          |        |
+| **56**  | As a user, I want to be able to bet against my friends on the outcome of the match. Using an Ethereum (blockchain) smart contract that automatically deposits money to the winners account.                                                  | C                |          |        |
+| **57**  | As a user, I want to be able to have a league that has many players, playing on different courses over a long period of time so I can have a big tournament over a long period of time with my friends.                                      | C                |          |        |
+| **58**  | As a tournament organizer, I want to be able to access the score of all tournament players.                                                                                                                                                  | C                |          |        |
+| **59**  | As a tournament player, I want to be able to register to a tournament via the openFOLF app.                                                                                                                                                  | C                |          |        |
+| **60**  | As a tournament organizer, I want to be able to create a new tournament with the openFOLF app.                                                                                                                                               | C                |          |        |
+| **61**  | As a tournament player, I want to be able to log my score on openFOLF and give any third parties access to my live score.                                                                                                                    | C                |          |        |
+| **301** | As a user I would like to register my tee, and select from what tee box I’m playing from, to better keep track of my statistics.                                                                                                             | C                | 13       |        |
 
 ### Non-functional Requirements
 
 The non-functional requirements specify those requirements that can be used to judge the operation of the system, rather than specific behaviors. Because these requirements will often impact the application as a whole, specific uses of these requirements will not be linked to the use cases in 4.3 even though applicable, except in a couple of cases when deemed necessary to be explicit.
 
-| No. | User stories                                                                                                                                                   | Priority (A/B/C) | Use Case | Status |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------- | ------ |
-| 62  | The application must be usable on any mobile operating system with browser capabilities.                                                                       | A                |          | Done   |
-| 63  | The application shall keep personal information secret and comply with Icelandic law and EU’s General Data Protection Regulations.                             | A                |          | Done   |
-| 64  | The application must be usable on any desktop computer with browser capabilities.                                                                              | A                |          | Done   |
-| 65  | The application must be scalable.                                                                                                                              | A                |          | Done   |
-| 66  | The application shall support at least 100 users at any given time.                                                                                            | A                |          | Done   |
-| 67  | The www.openfolf.net website must be optimized for search engine rankings, SEO friendly.                                                                       | A                | 1        | Done   |
-| 68  | The system must send notifications to admins if the webpage, application or connected service go down.                                                         | A                |          | Done   |
-| 69  | The application shall change the score of players playing a round in real time.                                                                                | A                |          | Done   |
-| 70  | The application must have the capability of working as any other locally installed app such as having push notifications and can be added to user home screen. | A                | 2, 11    | Done   |
-| 71  | The application shall have 98% uptime after launch date.                                                                                                       | B                |          | Done   |
-| 72  | The application shall be able to log in a user within 5 seconds.                                                                                               | B                |          | Done   |
-| 73  | The application’s source code must have proper documentation and guides for code contributors.                                                                 | B                |          | Done   |
-| 74  | The application shall not accept advertising.                                                                                                                  | C                |          | Done   |
-| 75  | The application’s source code shall be available for other users to view, fork and make pull requests on.                                                      | C                |          | Done   |
-| 76  | The application must be usable on any smart watch with browser capabilities.                                                                                   | C                |          |        |
-| 77  | The application shall have a public facing API for third party actors to get public/authorized data.                                                           | C                |          |        |
+| No.    | User stories                                                                                                                                                   | Priority (A/B/C) | Use Case | Status |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------- | ------ |
+| **62** | The application must be usable on any mobile operating system with browser capabilities.                                                                       | A                |          | Done   |
+| **63** | The application shall keep personal information secret and comply with Icelandic law and EU’s General Data Protection Regulations.                             | A                |          | Done   |
+| **64** | The application must be usable on any desktop computer with browser capabilities.                                                                              | A                |          | Done   |
+| **65** | The application must be scalable.                                                                                                                              | A                |          | Done   |
+| **66** | The application shall support at least 100 users at any given time.                                                                                            | A                |          | Done   |
+| **67** | The www.openfolf.net website must be optimized for search engine rankings, SEO friendly.                                                                       | A                | 1        | Done   |
+| **68** | The system must send notifications to admins if the webpage, application or connected service go down.                                                         | A                |          | Done   |
+| **69** | The application shall change the score of players playing a round in real time.                                                                                | A                |          | Done   |
+| **70** | The application must have the capability of working as any other locally installed app such as having push notifications and can be added to user home screen. | A                | 2, 11    | Done   |
+| **71** | The application shall have 98% uptime after launch date.                                                                                                       | B                |          | Done   |
+| **72** | The application shall be able to log in a user within 5 seconds.                                                                                               | B                |          | Done   |
+| **73** | The application’s source code must have proper documentation and guides for code contributors.                                                                 | B                |          | Done   |
+| **74** | The application shall not accept advertising.                                                                                                                  | C                |          | Done   |
+| **75** | The application’s source code shall be available for other users to view, fork and make pull requests on.                                                      | C                |          | Done   |
+| **76** | The application must be usable on any smart watch with browser capabilities.                                                                                   | C                |          |        |
+| **77** | The application shall have a public facing API for third party actors to get public/authorized data.                                                           | C                |          |        |
 
 ## Use cases
 
-The use cases below try to envelop as many A requirements and edge cases as possible and should give a clear image of the application´s core functionality as the team viewed it in the beginning of sprint 3 when programming began.
+The use cases below try to envelop as many A requirements and edge cases as possible and should give a clear image of the _application´s_ core functionality as the team viewed it in the beginning of sprint 3 when programming began.
 
 ---
 
 **Name:**
 
-A new user, searches for openFOLF on a search engine, launces the app and signs up.
+A new user, searches for openFOLF on a search engine, launches the app and signs up.
 
 **Number:** 1
 
