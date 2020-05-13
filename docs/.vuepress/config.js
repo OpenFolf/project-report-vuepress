@@ -14,9 +14,15 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
   ],
   evergreen: true,
-  plugins: ['@vuepress/pwa', '@vuepress/back-to-top', '@vuepress/plugin-nprogress'],
+  plugins: [
+    '@vuepress/pwa',
+    { updatePopup: true },
+    '@vuepress/back-to-top',
+    '@vuepress/plugin-nprogress',
+  ],
   themeConfig: {
     displayAllHeaders: true,
+    smoothCsroll: true,
     logo: '/images/openfolfgreen.svg',
     nav: [
       { text: 'Landing Page', link: 'https://www.openfolf.net/' },
