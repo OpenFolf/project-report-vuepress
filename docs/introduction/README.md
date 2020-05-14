@@ -2,7 +2,7 @@
 
 ## openFOLF
 
-This report describes the final project for a BSc in computer science from Reykjavik University. The goal was to create a _Progressive Web App_ that disc golf players can use while they play, to enhance their experience. The application was named **openFOLF** (in this report from now on referred to as the _application_).
+This report describes the final project for a BSc in computer science from _Reykjavik University_. The goal was to create a _Progressive Web App_ that disc golf players can use while they play, to enhance their experience. The application was named **openFOLF** (in this report from now on referred to as the _application_).
 
 ## The problem
 
@@ -27,4 +27,4 @@ In this project we focused on developing the core functionality like keeping sco
 
 Folf has become quite popular and we see our user group as mainly being folf players in Iceland.
 
-We used Vue.js, a front-end JavaScript framework, to build the user interface. The design is a progressive web application for mobile users. The Jamstack methodology and workflows were used to connect the front-end to the back-end, with the back-end consisting of a collection of microservices set up through _Amazon Web Services_. This way the _application_ will be scalable according to usage.
+We used _Vue.js_, a front-end _JavaScript_ framework, to build the user interface. The design is a progressive web application for mobile users. The _Jamstack_ methodology and workflows were used to connect the front-end to the back-end, with the back-end consisting of a collection of microservices set up through _Amazon Web Services_. This way the _application_ will be scalable according to usage.
