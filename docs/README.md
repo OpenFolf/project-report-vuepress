@@ -14,3 +14,7 @@ features:
     details: aegir15@ru.is
 footer: GPLv3 Licensed | 2020 | Reykjavik University
 ---
+
+<div style="display: flex; flex-flow: row; justify-content: center;">
+  <img src="/images/ru-logo.jpg" alt="Reykjavik University Logo"  />
+</div>
