@@ -14,20 +14,32 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
   ],
   evergreen: true,
+  markdown: {
+    lineNumbers: true,
+  },
   plugins: [
-    '@vuepress/pwa',
-    { updatePopup: true },
+    [
+      '@vuepress/pwa',
+      {
+        updatePopup: {
+          message: 'opeFOLF Docs has been updated!',
+          buttonText: 'Refresh',
+        },
+      },
+    ],
     '@vuepress/back-to-top',
     '@vuepress/plugin-nprogress',
+    '@vuepress/active-header-links',
+    '@vuepress/medium-zoom',
   ],
   themeConfig: {
     displayAllHeaders: true,
-    smoothCsroll: true,
+    smoothScroll: true,
     logo: '/images/openfolfgreen.svg',
     nav: [
-      { text: 'Landing Page', link: 'https://www.openfolf.net/' },
-      { text: 'Application', link: 'https://app.openfolf.net/' },
-      { text: 'Source Code', link: 'https://github.com/OpenFolf/' },
+      { text: 'The Landing Page', link: 'https://www.openfolf.net/' },
+      { text: 'The Application', link: 'https://app.openfolf.net/' },
+      { text: 'The Source Code', link: 'https://github.com/OpenFolf/' },
       { text: 'Reykjavik University', link: 'https://www.ru.is/' },
     ],
     searchPlaceholder: 'Search the report...',
