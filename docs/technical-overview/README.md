@@ -10,7 +10,7 @@ Since we are making a progressive web application, _openFOLF_ can be thought of 
   <img src="/images/flow-diagram.png" alt="Flow Diagram for openFOLF.net"  />
 </div>
 
-_Figure 1:_ Flow diagram of the website **openfolf.net** and the application hosted at **app.openfolf.net**
+###### _Figure 1:_ Flow diagram of the website **openfolf.net** and the application hosted at **app.openfolf.net**
 
 ## Jamstack
 
@@ -90,7 +90,7 @@ For the back-end of the _application_ we used different services from _Amazon We
   <img src="/images/tech-stack.png" alt="Tech Stack for openFOLF.net"  />
 </div>
 
-_Figure 2:_ Technical stack
+###### _Figure 2:_ Technical stack
 
 ## Database
 
@@ -116,7 +116,7 @@ In order to better visualize the relationship between the data we needed to orga
   <img src="/images/er-diagram.png" alt="ER Diagram for openFOLF.net"  />
 </div>
 
-_Figure 3:_ ER diagram
+###### _Figure 3:_ ER diagram
 
 ### GraphQL
 
