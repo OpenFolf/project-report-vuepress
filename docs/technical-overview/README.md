@@ -34,11 +34,11 @@ The _application_ was written in _ECMAScript_, the standardized _JavaScript_. Wi
 
 ### Node.js
 
-Both front- and back-ends of the application rely on _Node.js_. _Node.js_ is a cross-platform _JavaScript_ runtime environment. In _Node.js_ we can use the new _ECMAScript_ standards without any problems, it has an abundance of different packages and it is a popular tool for any kind of project. By using only one programming language, the whole team could write all aspects of the application without the headache of making different programming languages and paradigms compatible with each other.
+Both front- and back-ends of the application rely on _Node.js_ which is a cross-platform _JavaScript_ runtime environment. In _Node.js_ we can use the new _ECMAScript_ standards without any problems, it has an abundance of different packages and it is a popular tool for any kind of project. By using only one programming language, the whole team could write all aspects of the application without the headache of making different programming languages and paradigms compatible with each other.
 
 ## Coding Guidelines
 
-As a general guideline we followed the rules and best practices laid out by each framework. Furthermore, the use of _ESLint_ + _Prettier_ to lint and automatically format all code written will ensure that the code is unified in both style and appearance.
+As a general guideline we followed the rules and best practices laid out by each framework. Furthermore, the use of _ESLint_ and _Prettier_ to lint and automatically format all code written will ensure that the code is unified in both style and appearance.
 
 ### Code Editor
 
@@ -46,7 +46,7 @@ Team members used _Visual Studio Code_ to write and manage all source code. We c
 
 ## CI/CD
 
-A big part of the Jamstack methodology is CI/CD or continuous integration and continuous delivery. The concept of always adding to your product in small increments in a safe and predictable manner.
+A big part of the Jamstack methodology is CI/CD or _continuous integration_ and _continuous delivery_. The concept of always adding to your product in small increments in a safe and predictable manner.
 
 ### Continuous integration
 
@@ -56,35 +56,35 @@ In this way we continuously integrated the code from team members into a unified
 
 ### Continuous delivery
 
-Where continuous integration ends continuous delivery picks up. An automated way to move changes from development environment to a production environment of your selected infrastructure.
+Where _continuous integration_ ends _continuous delivery_ picks up. An automated way to move changes from development environment to a production environment of your selected infrastructure.
 
 We used _AWS’s Amplify_ service to manage our automated testing and build settings. This is then connected to our _GitHub_ repository. When we push our changes onto the master branch an automated build and test process starts which delivers an e-mail with the error message if there are any problems in the process. If everything is successful the application is then automatically deployed to [openfolf.net](https://www.openfolf.net/), [app.openfolf.net](https://app.openfolf.net), [docs.openfolf.net](https://docs.openfolf.net), etc. depending on the repository we pushed changes onto.
 
 ### Testing
 
-Testing is a significant part of CI/CD. All builds were manually tested on a dev branch before being pushed to the development/master branch. In the build process automatic unit tests ran. If any of those tests produce an error, the build process is stopped and we get notified by email.
+Testing is a significant part of _CI/CD_. All builds were manually tested on a dev branch before being pushed to the development/master branch. In the build process automatic unit tests ran. If any of those tests produce an error, the build process is stopped, and we get notified by email.
 
-We implemented the unit tests with _Vue Test Utils_, a wrapper for the _Jest_ testing framework. When selecting libraries for the app we tried to use those that were officially recommended by _Vue.js_ such as _Vuex_ and _Vue Router_ because these frameworks are heavily tested.
+We implemented the unit tests with _Vue Test Utils_, a wrapper for the _Jest_ testing framework. When selecting libraries for the application we tried to use those that were officially recommended by _Vue.js_ such as _Vuex_ and _Vue Router_ because these frameworks are heavily tested.
 
 ## Search Engine Optimization
 
 One of the functional requirement was to ensure that _Google_ and other search engines know what openFOLF is, we had to make sure that all the meta information for [openfolf.net](https://www.openfolf.net/) and [docs.openfolf.net](https://docs.openfolf.net) was according to specification. Modern web crawlers look for meta data when they visit an URL. There are many different ways to list your meta data, we chose to cover some of the most used:
 
-- _Open Graph Protocol_ - Used by Facebook
-- _Schema.org Markup_ - Used by Google
+- _Open Graph Protocol_ - Used by _Facebook_
+- _Schema.org Markup_ - Used by _Google_
 - _Twitter card_
 
 These meta tags describe the content of the website and how to navigate them. When these tags are correct, and everything is in order you are guaranteed that your site will come up in web searches.
 
-With _Google_ you can test this with their _Light House Audit_ tool inside of _Chrome_. Our landing page and our docs page both score 100/100 in the SEO test. _Google's_ search engine favors results that are mobile optimized. All of our sites are mobile first in their design principles and are progressive web apps scoring 97 for _Best Practices_ and 99 for _Accessibility_.
+With _Google_ you can test this with their _Light House Audit_ tool inside of _Chrome_. Our landing page and our docs page both score 100/100 in the _SEO_ test. _Google's_ search engine favors results that are mobile optimized. All of our sites are mobile first in their design principles and are progressive web apps scoring 97 for _Best Practices_ and 99 for _Accessibility_.
 
 ## Front-end
 
-For the front-end of the _application_ we were looking for something approachable, versatile and performant. _Vue.js_ was chosen for all those reasons. We laid out the project scaffolding and ran a development server using _VueCLI_, a command line tool for _Vue.js_ development. The project was set up with _Vue Router_, a client-side router utilizing the _History API_. We used _Vuex_, a state management pattern and library based on the _Flux pattern_ championed by _Facebook_. A centralized store for all the components in the _application_ ensures that the state has only one source of truth and can only be mutated in a predictable fashion.
+For the front-end of the _application_ we were looking for something approachable, versatile and performant. _Vue.js_ was chosen for all those reasons. We laid out the project scaffolding and ran a development server using _VueCLI_, a command line tool for _Vue.js_ development. The project was set up with _Vue Router_, a client-side router utilizing the _History API_. We used _Vuex_, a state management pattern and library based on the _Flux Pattern_ championed by _Facebook_. A centralized store for all the components in the _application_ ensures that the state has only one source of truth and can only be mutated in a predictable fashion.
 
 ## Back-end
 
-For the back-end of the _application_ we used different services from _Amazon Web Services_ (AWS). Amazon _S3_ was used to store the _Vue.js_ front-end. _CloudFront_ is a web service that was used to speed up distribution of our front-end by delivering our content through a worldwide network of data centers. _Route53_ addresses domain service requests to our website. Amazon _Cognito_ was used for both the user and API authentication. We started out planning to map out all our API endpoints through Amazon _API Gateway_ but in sprint 3 decided to add _GraphQL_ through _AWS AppSync_ to our stack. The data is then stored in the NoSQL database from Amazon called _DynamoDB_.
+For the back-end of the _application_ we used different services from _Amazon Web Services (AWS)_. _Amazon S3_ was used to store the _Vue.js_ front-end. _CloudFront_ is a web service that was used to speed up distribution of our front-end by delivering our content through a worldwide network of data centers. _Route53_ addresses domain service requests to our website. _Amazon Cognito_ was used for both the user and API authentication. We started out planning to map out all our API endpoints through _Amazon API Gateway_ but in sprint 3 decided to add _GraphQL_ through _AWS AppSync_ to our stack. The data is then stored in the NoSQL database from Amazon called _DynamoDB_.
 
 <div style="display: flex; flex-flow: row; justify-content: center;">
   <img src="/images/tech-stack.png" alt="Tech Stack for openFOLF.net"  />

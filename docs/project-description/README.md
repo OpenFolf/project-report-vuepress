@@ -4,13 +4,13 @@ In this chapter we list the project description and the requirements that were m
 
 ## User groups
 
-We analyzed the user base and split it into five different user groups. First is the casual _folf_ player, that is the most important group we are trying to serve with the _application_. These are the players that only play a few rounds a year. To make the _application_ appealing to this group it has, first and foremost, to be easy and straightforward to use. A new user must be able to use the _application_ to see a list of courses, then go to a course and start registering his score as easily as possible.
+We analyzed the user base and split it into four different user groups. First is the casual _folf_ player, that is the most important group we are trying to serve with the _application_. These are the players that only play a few rounds a year. To make the _application_ appealing to this group it has, first and foremost, to be easy and straightforward to use. A new user must be able to use the _application_ to see a list of courses, then go to a course and start registering his score as easily as possible.
 
 Another user group is the _dedicated folf_ players and is of medium importance. This user group overlaps with the casual players but differs not only in how often they play, but in what they expect from and how they would use the _application_. They would use the _application_ not only to register the score, but also to track their progress in the game and would like to register as much data as possible. In interviews for example one interviewee said it would be crucial for this kind of application to be able to track what discs he used for each hole. So, gathering statistics and being able to have different view models of statistics is important for this group. They are also more familiar with the game and would like to be able to play different variants of games.
 
-_Tournament directors_ and _tournament players_ are also a user group we would like to serve but has been classed with low importance. The reason is that doing so would expand the scope of the _application_ beyond what can be achieved in a space of one semester. Our perception is that these features must be flawless and super easy to use or not implemented at all. First, we would have to implement an interface for the tournament directors that would allow them to create a schedule, order players in groups, allow them to view players score, change the score and so on. This interface would likely be used on computers and not mobiles and that would have to factor into the design. Considerations for tournament players is getting an overview of the tournament, tee times and score. Also, there would be restrictions on how they would register score, where each player in a group is responsible for registering other players score. Because of how different these features are from the Minimum Viable Product requirements seen in chapter 4.2.1 and would effectively change the _application_ from being an app to register score to a tournament management application. Because of this we decided against implementing these features for now.
+_Tournament directors_ and _tournament players_ are also a user group we would like to serve but has been classed with low importance. The reason is that doing so would expand the scope of the _application_ beyond what can be achieved in a space of one semester. Our perception is that these features must be flawless and super easy to use or not implemented at all. First, we would have to implement an interface for the tournament directors that would allow them to create a schedule, order players in groups, allow them to view players score, change the score and so on. This interface would likely be used on computers and not mobiles and that would have to factor into the design. Considerations for tournament players is getting an overview of the tournament, tee times and score. Also, there would be restrictions on how they would register score, where each player in a group is responsible for registering other players score. Because of how different these features are from the Minimum Viable Product requirements and would effectively change the _application_ from being an app to register score to a tournament management application. Because of this we decided against implementing these features for now.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 ### Casual folf player
 
@@ -41,7 +41,7 @@ _Tournament directors_ and _tournament players_ are also a user group we would l
 - **Get location.**
 - **Get the distance of the basket.**
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 ### Dedicated folf player
 
@@ -74,7 +74,7 @@ _Tournament directors_ and _tournament players_ are also a user group we would l
 - **View statistics.**
 - **Play alternative types of games.**
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 ### Tournament directors
 
@@ -107,7 +107,7 @@ _Tournament directors_ and _tournament players_ are also a user group we would l
 - **View real time score**
 - **View statistics**
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 ### Tournament players
 
@@ -137,13 +137,15 @@ _Tournament directors_ and _tournament players_ are also a user group we would l
 - **View event time and relevant tournament information**
 - **View statistics**
 
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
+
 ## Requirements
 
 The _application_ requirements are separated first into functional requirements that are further divided into A, B and C priorities, with the C requirements being requirements that we deem highly unlikely to be fulfilled. Then we list the Non-Functional Requirements that are divided in the same way. They also show which use case they belong to and the status of the requirement. Note that for most of the non-functional requirements use cases are not especially listed because of how general they are.
 
-After sprint 2 we decided to stop changing the numbering of those requirements already on the list even if a new one was added in order to link the use cases in chapter 4.3 to individual requirements and vice versa. As expected, new requirements have been added after that time, considering new insights from interviews and user testing. Those requirements are marked 100 something if deemed A requirement, 200 for B and 300 for C and 400 for non-functional requirements as well as being highlighted especially.
+After sprint 2 we decided to stop changing the numbering of those requirements already on the list even if a new one was added in order to link the use cases later in this chapter to individual requirements and vice versa. As expected, new requirements have been added after that time, considering new insights from interviews and user testing. Those requirements are marked 100 something if deemed an A requirement, 200 for a B and 300 for a C and 400 for any non-functional requirements as well as being highlighted especially.
 
-The functional requirement in listed in _**"Minimal Viable Product"**_ are set up in the format “As a **User group** I want to be able to **Operation** so I can **Achievement**”. The non-functional requirements in chapter 4.2.4 are of the format the _application_ **must/shall** **Achievement**.
+The functional requirements listed in _**"Minimal Viable Product"**_ are set up in the format "As a **User group** I want to be able to **Operation** so I can **Achievement**". The non-functional requirements in later in this chapter are of the format the _application_ **must/shall** **Achievement**.
 
 ## Minimum Viable Product
 

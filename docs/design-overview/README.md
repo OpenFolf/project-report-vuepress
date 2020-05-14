@@ -1,12 +1,12 @@
 # Design Overview
 
-We knew from the beginning that we wanted to make a progressive web application and that the minimum viable product would be an application that would at least keep the score of players. As stated before, it would consist of the [openFOLF.net](https://www.openfolf.net) website that would have the “hero banner” look, a simple, single page website with general information. The other would be the application at [app.openFOLF.net](https://app.openfolf.net/) After a splash screen, a player would login and then log his/her score. With the purpose of being agile we designed the application in small increments as we fulfilled the requirements according to the requirements list.
+We knew from the beginning that we wanted to make a progressive web application and that the minimum viable product would be an application that would at least keep the score of players. As stated before, it would consist of the [openFOLF.net](https://www.openfolf.net) website that would have the “hero banner” look, a simple, single page website with general information. The other would be the _application_ at [app.openFOLF.net](https://app.openfolf.net/) After a splash screen, a player would login and then log his/her score. With the purpose of being agile we designed the _application_ in small increments as we fulfilled the requirements according to the requirements list.
 
-The chapter begins with a short history of how the application progressed both in design and functionality. It is done by showing the first drawings on a whiteboard, the team made at the beginning of the project, and a brief discussion on how we planned to build. Then we show the low fidelity prototypes and at last how the application looks at its third iteration, just before handing in the assignment.
+The chapter begins with a short history of how the _application_ progressed both in design and functionality. It is done by showing the first drawings on a whiteboard, the team made at the beginning of the project, and a brief discussion on how we planned to build. Then we show the low fidelity prototypes and at last how the application looks at its third iteration, just before handing in the assignment.
 
-Next is a subchapter on testing. We decided to perform usability testing to help us with design of the application, as usability testing is focused on UI/UX capabilities of the application. We list main findings and how we changed the application if change was necessary.
+Next is a sub-chapter on testing. We decided to perform usability testing to help us with design of the _application_, as usability testing is focused on UI/UX capabilities of the _application_. We list main findings and how we changed the _application_ if change was necessary.
 
-At the end of the chapter we name some of the improvements that we were not able to implement before hand in but will be prioritized when moving forward with the application.
+At the end of the chapter we name some of the improvements that we were not able to implement before hand in but will be prioritized when moving forward with the _application_.
 
 <div style="display: flex; flex-flow: row; justify-content: center;">
   <img src="/images/wireframe.png" alt="Early wireframe for openFOLF.net" />
@@ -16,48 +16,48 @@ _Figure 4:_ Early wireframe
 
 ## Design Process
 
-_Figure 4_ is an illustration of the first draft of the application after sprint 0. More wireframes and screenshots of the application throughout the process can be viewed in the appendix. In the following subchapters the design process of some of the main features of the application trough out the semester. This will include some discussion and references to relevant pictures in the appendix.
+_Figure 4_ is an illustration of the first draft of the _application_ after sprint 0. More wireframes and screenshots of the _application_ throughout the process can be viewed in the appendix. In the following subchapters the design process of some of the main features of the _application_ trough out the semester. This will include some discussion and references to relevant pictures in the appendix.
 
 ### Early drafts
 
-The team made the first drafts of the application together, were we drew rough sketches on a whiteboard and then redrew those with Balsamiq wireframes (figures 1-4 in appendix). It was decided that the application would be designed with a mobile first strategy in mind and because of that all the wireframes show how the application will look on a mobile screen.
+The team made the first drafts of the _application_ together, were we drew rough sketches on a whiteboard and then redrew those with _Balsamiq_ wireframes. It was decided that the _application_ would be designed with a mobile first strategy in mind and because of that all the wireframes show how the _application_ will look on a mobile screen.
 
-Figure 2 in the appendix shows how we imagined the opening page of [openfolf.net](https://www.openfolf.net/) would look like. When signed in the main page of the application is shown. For the look and feel of the application, we decided to use Vuetify, a material design component framework for Vue.js for as many components as possible. We then customized and adapted our own design ideas where needed.
+Figure 2 in the appendix shows how we imagined the opening page of [openfolf.net](https://www.openfolf.net/) would look like. When signed in the main page of the _application_ is shown. For the look and feel of the _application_, we decided to use _Vuetify_, a material design component framework for _Vue.js_ for as many components as possible. We then customized and adapted our own design ideas where needed.
 
-One of the main considerations of the team is that the application is first and foremost an app to log the score of a folf round for a single user or with a group. Having geolocation tags so a user can find the nearest course, change his score card name and other features that would enrich the experience were however extra fluff. Because of this the team found that making the main application page as clean as possible to make it as easy for a user to start logging the score as soon possible. If the user wanted to do something else, he would have to access that through some kind of menu, in the first wireframe draft the solution was a burger menu.
+One of the main considerations of the team is that the _application_ is first and foremost an app to log the score of a folf round for a single user or with a group. Having geolocation tags so a user can find the nearest course, change his score card name and other features that would enrich the experience were however extra fluff. Because of this the team found that making the main application page as clean as possible to make it as easy for a user to start logging the score as soon possible. If the user wanted to do something else, he would have to access that through some kind of menu, in the first wireframe draft the solution was a burger menu.
 
-At the end of sprint 3 the team had finished first iteration of the front-end, this can be viewed in figures 5-8. The main changes were that after the login screen a bottom navigation bar would appear instead of a burger menu. This menu was mainly selected because of UX design considerations; with this setup the user would be able to use only one hand to access most of the sites content without sacrificing the goal of making the path for a user to start a game any longer or unclear. By then the menu consisted of a home, new game, join game and options. By this time the team had taken interviews with folf players and created use cases for the A requirements. Creating the use cases polished how we imagined the flow of the application, and the flowchart shown in figure 9 in the appendix shows what the team aimed for when we started again, from a clean slate, in the next iteration of the application at the start of sprint 4.
+At the end of sprint 3 the team had finished first iteration of the front-end, this can be viewed in figures 5-8. The main changes were that after the login screen a bottom navigation bar would appear instead of a burger menu. This menu was mainly selected because of UX design considerations; with this setup the user would be able to use only one hand to access most of the sites content without sacrificing the goal of making the path for a user to start a game any longer or unclear. By then the menu consisted of a home, new game, join game and options. By this time the team had taken interviews with folf players and created use cases for the A requirements. Creating the use cases polished how we imagined the flow of the _application_, and the flowchart shown in figure 9 in the appendix shows what the team aimed for when we started again, from a clean slate, in the next iteration of the _application_ at the start of sprint 4.
 
 ### Iteration 2
 
-Having put a lot of work into the use cases and the work of making them consistent amplified some of the issues of certain features, or solutions to a problem, would inevitably bring. One of those features was how friends were to play a game together. This is a core requirement for the app and first solution was to have a ‘friend’ system. In short, each user could add another user to his friends list, in order to make it as easy as possible connect to each other and share a score card when playing. We knew that we did not want to create a social media app and this solution would steer the application in a completely different direction than we had envisioned. By the end of sprint 3 we decided to completely scrap this idea and instead opted to implement a game lobby. A user would select a course he wanted to play and would then start a game lobby that would generate a unique code, that other players could use to join the lobby. When all players have joined the lobby the owner presses start game and all players are redirected to the scorecard.
+Having put a lot of work into the use cases and the work of making them consistent amplified some of the issues of certain features, or solutions to a problem, would inevitably bring. One of those features was how friends were to play a game together. This is a core requirement for the _application_ and first solution was to have a "friend" system. In short, each user could add another user to his friends list, in order to make it as easy as possible connect to each other and share a score card when playing. We knew that we did not want to create a social media app and this solution would steer the _application_ in a completely different direction than we had envisioned. By the end of sprint 3 we decided to completely scrap this idea and instead opted to implement a game lobby. A user would select a course he wanted to play and would then start a game lobby that would generate a unique code, that other players could use to join the lobby. When all players have joined the lobby the owner presses start game and all players are redirected to the scorecard.
 
 Though this concept of a game lobby should be known to most of those that have played multiplayer games, it is not as straight forward or logical as the one with the friend list that is known through social media sites. This became clear in user testing.
 
 ### Iteration 3
 
-By this time we had a working prototype that we were able to use for testing, but not much more, since much of the functionality was not ready. We had done some informal interviews and testing by this time but decided to do a formal usability testing on the application. Continuation of the design process is at the end of this chapter.
+By this time we had a working prototype that we were able to use for testing, but not much more, since much of the functionality was not ready. We had done some informal interviews and testing by this time but decided to do a formal usability testing on the _application_. Continuation of the design process is at the end of this chapter.
 
 ## Usability testing
 
-In order to get varied test data to help with the design and feel of the application, we performed several usability tests with a wide range of subjects. For subjects we invited our friends and family to play, also random strangers we met at folf courses. With few subjects we tried think aloud testing where users were asked to vocalize what they were doing in the app. That worked well but could not be done in all cases because sometimes there were people around and the test subjects felt a little awkward doing so. With others we just observed while playing alone or in groups. We also played along ourselves on a few occasions. Tests were performed at various folf courses in the Reykjavik area at various times in the design process.
+In order to get varied test data to help with the design and feel of the _application_, we performed several usability tests with a wide range of subjects. For subjects we invited our friends and family to play, also random strangers we met at folf courses. With few subjects we tried think aloud testing where users were asked to vocalize what they were doing in the _application_. That worked well but could not be done in all cases because sometimes there were people around and the test subjects felt a little awkward doing so. With others we just observed while playing alone or in groups. We also played along ourselves on a few occasions. Tests were performed at various folf courses in the Reykjavik area at various times in the design process.
 
 ### Measurable Goals
 
-We decided on a few measurable goals we wanted to try and achieve in our usability test. We tried to capture the main usability factors of effectiveness, efficiency and satisfaction. We also added some tasks that would give us an insight into how users would fare in interacting with the UX design of the application.
+We decided on a few measurable goals we wanted to try and achieve in our usability test. We tried to capture the main usability factors of effectiveness, efficiency and satisfaction. We also added some tasks that would give us an insight into how users would fare in interacting with the UX design of the _application_.
 
-| Nr. | Description                                             | Usability factor | Data                   | THE GOAL                             |
-| --- | ------------------------------------------------------- | ---------------- | ---------------------- | ------------------------------------ |
-| 1   | User is able to start a game within 30 sec              | Efficiency       | Time                   | Average time <30 sec                 |
-| 2   | User is able to select desired course                   | Effectiveness    | Finished/ Not finished | Finish task <20 sec                  |
-| 3   | User is able to change his/her scorecard name           | Effectiveness    | Finished/ Not finished | Finish task <30 sec                  |
-| 4   | General satisfaction with playing a game in the app     | Satisfaction     | Grade between 0 and 5  | Average score >= 4                   |
-| 5   | General satisfaction with stats page                    | Satisfaction     | Grade between 0 and 5  | Average score >= 4                   |
-| 6   | User is able to sign-up within 1 min                    | Efficiency       | Time                   | Average time <30 sec                 |
-| 7   | User is able to log score for all players               | Effectiveness    | Finished/ Not finished | Finish task <20 sec                  |
-| 8   | Real time updating of scorecard throughout playing time | Effectiveness    | Finished/ Not finished | Average successful completion >=95%  |
-| 9   | User does not ask for help more than once during test   | Effectiveness    | Count of help requests | Average number of help requests =< 1 |
-| 10  | User is able to join a game given a lobby code          | Effectiveness    | Finished/ Not finished | Finish task <30 sec                  |
+| Nr.    | Description                                             | Usability factor | Data                   | THE GOAL                             |
+| ------ | ------------------------------------------------------- | ---------------- | ---------------------- | ------------------------------------ |
+| **1**  | User is able to start a game within 30 sec              | Efficiency       | Time                   | Average time <30 sec                 |
+| **2**  | User is able to select desired course                   | Effectiveness    | Finished/ Not finished | Finish task <20 sec                  |
+| **3**  | User is able to change his/her scorecard name           | Effectiveness    | Finished/ Not finished | Finish task <30 sec                  |
+| **4**  | General satisfaction with playing a game in the app     | Satisfaction     | Grade between 0 and 5  | Average score >= 4                   |
+| **5**  | General satisfaction with stats page                    | Satisfaction     | Grade between 0 and 5  | Average score >= 4                   |
+| **6**  | User is able to sign-up within 1 min                    | Efficiency       | Time                   | Average time <30 sec                 |
+| **7**  | User is able to log score for all players               | Effectiveness    | Finished/ Not finished | Finish task <20 sec                  |
+| **8**  | Real time updating of scorecard throughout playing time | Effectiveness    | Finished/ Not finished | Average successful completion >=95%  |
+| **9**  | User does not ask for help more than once during test   | Effectiveness    | Count of help requests | Average number of help requests =< 1 |
+| **10** | User is able to join a game given a lobby code          | Effectiveness    | Finished/ Not finished | Finish task <30 sec                  |
 
 ### How tests were performed
 
@@ -68,7 +68,7 @@ We explicitly explained that the product was in testing phase, they themselves w
 Tasks that users were asked to perform during testing:
 
 - Sign up for an openFOLF account.
-- Sign-in to app.
+- Sign-in to _application_.
 - Change your scorecard name on user profile.
 - Select a course to play.
 - Invite friends to play along if you started a game.
@@ -95,7 +95,7 @@ _**User is able to start a game within 30 sec.**_
 
 At first this task did not test particularly well. Quite a few users were not sure where in the app to go and start a game. Most found out eventually but did not perform the task within the goal we had set ourselves. Some users even had to ask us how to start a game. Some did not understand the lobby concept.
 
-**Our reaction**: We set up a prominent play button that explains to new users how to use the app and the lobby concept. After this change the usability of this task scored extremely well. New users seemed to have no problem in creating a game after that.
+**Our reaction**: _We set up a prominent play button that explains to new users how to use the app and the lobby concept. After this change the usability of this task scored extremely well. New users seemed to have no problem in creating a game after that._
 
 ---
 
@@ -109,7 +109,7 @@ One user that has never played folf but is a golf player thought the distances s
 
 The few users that did not enable location services had no problem finding the course they desired as they are in alphabetical order.
 
-**Our reaction**: We changed the header to say SELECT COURSE and enlarged all heading font sizes within the application.
+**Our reaction**: _We changed the header to say SELECT COURSE and enlarged all heading font sizes within the application._
 
 ---
 
@@ -119,7 +119,7 @@ In general users were able to change their scorecard name without problem. Most 
 
 Some were confused at what a scorecard name was and asked if it was like a user name and were confused when it only allowed for 3 letters.
 
-**Potential reaction**: As they were first time users it was not too worrisome that users did not know what a scorecard name was. We could though add a username as well in later iterations of the application to emphasize the difference between a username and scorecard name.
+**Potential reaction**: _As they were first time users it was not too worrisome that users did not know what a scorecard name was. We could though add a username as well in later iterations of the application to emphasize the difference between a username and scorecard name._
 
 ---
 
@@ -133,17 +133,17 @@ _**General satisfaction with stats page.**_
 
 Most users felt the stats page should show more varied options of stats regarding games users have played. Otherwise they really liked the look and feel of the stats page and users seemed to have no trouble looking up score from previous games.
 
-**Potential reaction**: Add more statistic options for users to see regarding their gameplay in future iterations of the application
+**Potential reaction**: _Add more statistic options for users to see regarding their gameplay in future iterations of the application._
 
 ---
 
 _**User is able to sign-up within 1 min.**_
 
-Most users were able to sign up within this time limit. Quite a few noted that it would be nice to be able to sign in using Gmail or Facebook. A user thought that the application was broken because after sending the confirmation code the user was redirected to the sign in page without him noticing.
+Most users were able to sign up within this time limit. Quite a few noted that it would be nice to be able to sign in using _Google_ or _Facebook_. A user thought that the _application_ was broken because after sending the confirmation code the user was redirected to the sign in page without him noticing.
 
-**Potential reaction**: Add Google auth and/or Facebook in the future. We had discussed that we did not want Google or Facebook to be the first thing new users of our open source application would see. We might review that stance in later iterations of the application.
+**Potential reaction**: _Add Google auth and/or Facebook in the future. We had discussed that we did not want Google or Facebook to be the first thing new users of our open source application would see. We might review that stance in later iterations of the application._
 
-Furthermore, some kind of user feedback has to be added to the sign in process.
+_Furthermore, some kind of user feedback has to be added to the sign in process._
 
 ---
 
@@ -151,13 +151,13 @@ _**User can log score for all players.**_
 
 When using the score card (figure 17, appendix 3) most players were able to log their score and the score off other players. Most registered their score; then by default the cell below where they registered becomes active. Then they manually selected their team members cell and registered their score.
 
-The team had made a zigzag button for when a user is registering the score of all players. Instead of making the cell below active it makes the cell to its right active until all players score for that hole has been registered and then drops down to the next hole. But only one realized how to use it, and that was only by pressing all the buttons to see what they would, before logging any score and finding out that way. Others had to ask what the button does.
+The team had made a _zigzag_ button for when a user is logging the score of all players. Instead of making the cell below active it makes the cell to its right active until all players score for that hole has been logged and then drops down to the next hole. But only one realized how to use it, and that was only by pressing all the buttons to see what they would, before logging any score and finding out that way. Others had to ask what the button does.
 
-One thing that users voiced regarding the scorecard when they were testing the application on small phones, such as iPhone 8, was that could not see the whole table. There for they could not see for whom they were registering the score.
+One thing that users voiced regarding the scorecard when they were testing the _application_ on small phones, such as iPhone 8, was that could not see the whole table. There for they could not see for whom they were logging the score.
 
-**Potential reaction**: The zigzag button is unclear but does not seem to distract or bother those that do not use it. The team feels that its function is important for those that discover what it does and because of this we do not want to remove it. But both that button and the light mode/dark mode must be put in a menu, some later iterations. Furthermore, the zigzag button must display some tool tip that describes its function when pressed.
+**Potential reaction**: _The zigzag button is unclear but does not seem to distract or bother those that do not use it. The team feels that its function is important for those that discover what it does and because of this we do not want to remove it. But both that button and the light mode/dark mode must be put in a menu, some later iterations. Furthermore, the zigzag button must display some tool tip that describes its function when pressed._
 
-Because some users were not able to see the whole table, the tool header must float on top when user scrolls down the table to register score.
+_Because some users were not able to see the whole table, the tool header must float on top when user scrolls down the table to register score._
 
 ---
 
@@ -165,7 +165,7 @@ _**Real time updating of scorecard throughout playing time.**_
 
 Real time updating of the scorecard did not go well in our first tests. Users were losing connection and scorecard was not always updating in real time on the later holes of the course.
 
-**Our reaction**: We figured out that maintaining websocket connection over such a long period of time was not feasible. We re-wrote our subscription logic and during later tests users reported no problems regarding real time updates.
+**Our reaction**: _We figured out that maintaining a websocket connection over such a long period of time was not feasible. We re-wrote our subscription logic and during later tests users reported no problems regarding real time updates._
 
 ---
 
@@ -179,7 +179,7 @@ _**User is able to join a game given a lobby code.**_
 
 Like in the task of creating a game this task did not test particularly well in the beginning. Users were not sure where to go to join a game. Most found out eventually but did not perform the task within the goal we had set ourselves.
 
-**Our reaction**: We set up a prominent play button that explains to new users how to use the app. After this change the usability of this task scored extremely well. New users seemed to have no problem in joining a game after that.
+**Our reaction**: _We set up a prominent play button that explains to new users how to use the app. After this change the usability of this task scored extremely well. New users seemed to have no problem in joining a game after that._
 
 ---
 
