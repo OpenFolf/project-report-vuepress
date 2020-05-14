@@ -4,7 +4,7 @@ In this chapter we list the project description and the requirements that were m
 
 ## User groups
 
-We analyzed the user base and split it into four different user groups. First is the casual _folf_ player, that is the most important group we are trying to serve with the _application_. These are the players that only play a few rounds a year. To make the _application_ appealing to this group it has, first and foremost, to be easy and straightforward to use. A new user must be able to use the _application_ to see a list of courses, then go to a course and start registering his score as easily as possible.
+We analyzed the user base and split it into four different user groups. First is the casual _folf player_, that is the most important group we are trying to serve with the _application_. These are the players that only play a few rounds a year. To make the _application_ appealing to this group it has, first and foremost, to be easy and straightforward to use. A new user must be able to use the _application_ to see a list of courses, then go to a course and start registering his score as easily as possible.
 
 Another user group is the _dedicated folf_ players and is of medium importance. This user group overlaps with the casual players but differs not only in how often they play, but in what they expect from and how they would use the _application_. They would use the _application_ not only to register the score, but also to track their progress in the game and would like to register as much data as possible. In interviews for example one interviewee said it would be crucial for this kind of application to be able to track what discs he used for each hole. So, gathering statistics and being able to have different view models of statistics is important for this group. They are also more familiar with the game and would like to be able to play different variants of games.
 
@@ -177,11 +177,11 @@ The functional requirements listed in _**"Minimal Viable Product"**_ are set up 
 | **17**  | As a user, I want to be able to send an invite link to other players so they can join me in a game. (If a player is not a user, he/she should be made to go through sign-up process first). So, we can start playing sooner. | B                | 11       |        |
 | **18**  | As a user, I want to be able to be signed in immediately after I confirm my e-mail address, so I do not have to go through the log-in process again.                                                                         | B                |          |        |
 | **19**  | As a user, I want to be able to see an overview picture of each basket, so I can better decide how to play it.                                                                                                               | B                |          |        |
-| **20**  | As a user, I want to be able to have a public profile, so others can see my openFolf profile.                                                                                                                                | B                |          |        |
+| **20**  | As a user, I want to be able to have a public profile, so others can see my _openFOLF_ profile.                                                                                                                              | B                |          |        |
 | **21**  | As a user, I want to be able to customize the core features of the app, so I can decide on what is seen on the initial page. E.g. shortcuts and features I use all the time.                                                 | B                |          |        |
-| **22**  | As a user, I want to be able to choose a username so I can be identified by my openFOLF name.                                                                                                                                | B                |          |        |
+| **22**  | As a user, I want to be able to choose a username so I can be identified by my _openFOLF_ name.                                                                                                                              | B                |          |        |
 | **23**  | As a user, I would like to get a suggestion for a username when I sign-up, so I don’t have to choose a username.                                                                                                             | B                |          |        |
-| **24**  | As a user, I want to be able to donate money to the openFOLF project so I can continue using the web app without worries of ads or subscription models in the future.                                                        | B                |          |        |
+| **24**  | As a user, I want to be able to donate money to the _openFOLF_ project so I can continue using the web app without worries of ads or subscription models in the future.                                                      | B                |          |        |
 | **201** | As a user, I want to be able to add user to my friend list from the lobby so we can start a game faster in the future.                                                                                                       | B                | 12       |        |
 
 ### C - Tertiary Goals
@@ -193,24 +193,24 @@ The functional requirements listed in _**"Minimal Viable Product"**_ are set up 
 | **27**  | As a user, I want to be able to use the app to see in what direction the basket is relevant to my location so I know where it’s at if it is obscured from my line of sight.                                                                  | C                |          |        |
 | **28**  | As a user, I want to be able to register a folf course that is not in the app yet so I can log scores on any course I want.                                                                                                                  | C                |          |        |
 | **29**  | As a user, I want to be able to register a new course in the app. Just by giving it a name and by registering the GPS coordinates of the basket so I can add any courses not yet registered in the app.                                      | C                |          |        |
-| **30**  | As a code contributor, I want to be able to add a new course by adding to the source code that is publicly available on the openFOLF GitHub repository.                                                                                      | C                |          |        |
+| **30**  | As a code contributor, I want to be able to add a new course by adding to the source code that is publicly available on the _openFOLF_ GitHub repository.                                                                                    | C                |          |        |
 | **31**  | As a user, I want to be able to join a game with a QR code so I can join a game easily.                                                                                                                                                      | C                | 6        |        |
 | **32**  | As a user, I want to be able to add a new friend with a QR code so I can add new friends easily.                                                                                                                                             | C                |          |        |
 | **33**  | As a user, I would like to get pro-tips regarding how best to play each basket so I can best plan how to play the basket.                                                                                                                    | C                |          |        |
 | **34**  | As a user, I want to be able to access the official folf rules so I can learn how to play and quickly look up rules if any disagreements arise during game play.                                                                             | C                |          |        |
 | **35**  | As a user, I want to be able to access the rules of the game and any guides on different aspects of the game.                                                                                                                                | C                |          |        |
 | **36**  | As a user, I want to be able to easily find folf related news through the app so I can be up to date on all things frisbee golf related.                                                                                                     | C                |          |        |
-| **37**  | As a user, I want to be able to go to either openfolf.net or www.openfolf.net to learn about what openFOLF is.                                                                                                                               | C                |          | Done   |
+| **37**  | As a user, I want to be able to go to either openfolf.net or www.openfolf.net to learn about what _openFOLF_ is.                                                                                                                             | C                |          | Done   |
 | **38**  | As a user, I want to be able to log what discs I used while playing a certain basket so I can keep track on how I played that basket in the past.                                                                                            | C                |          |        |
 | **39**  | As a user, I want to be able to change the score for a game that has already been played.                                                                                                                                                    | C                | 7, 8, 9  |        |
 | **40**  | As a user, I want to be able to stop playing in the middle of a game without saving the score to the database/history.                                                                                                                       | C                |          |        |
-| **41**  | As a user, I want to be able to look at the history of other users on openFOLF that are on my friends list.                                                                                                                                  | C                |          |        |
+| **41**  | As a user, I want to be able to look at the history of other users on _openFOLF_ that are on my friends list.                                                                                                                                | C                |          |        |
 | **42**  | As a user, I want to be able to see what the average score of other players on the course is.                                                                                                                                                | C                |          |        |
 | **43**  | As a user, I want to be able to see how many players are currently playing certain course to get a rough estimate on if the course is too crowded.                                                                                           | C                |          |        |
-| **44**  | As a user, I want to be able to access an openFOLF API and directly access all my data so I can use it in whatever purpose I want.                                                                                                           | C                |          |        |
-| **45**  | As a user of another app, I want to be able to easily import my game history into openFOLF, so I can easily switch apps.                                                                                                                     | C                |          |        |
+| **44**  | As a user, I want to be able to access an _openFOLF_ API and directly access all my data so I can use it in whatever purpose I want.                                                                                                         | C                |          |        |
+| **45**  | As a user of another app, I want to be able to easily import my game history into _openFOLF_, so I can easily switch apps.                                                                                                                   | C                |          |        |
 | **46**  | As a user, I want to be able to post my score on Facebook (social media) so I can share with people how good at folf I am.                                                                                                                   | C                |          |        |
-| **47**  | As a user, I want to be able to sign up by other means. E.g. Facebook, Google etc... So, I don’t have to have an openFOLF profile.                                                                                                           | C                |          |        |
+| **47**  | As a user, I want to be able to sign up by other means. E.g. _Facebook_, _Google_ etc... So, I don’t have to have an _openFOLF_ profile.                                                                                                     | C                |          |        |
 | **48**  | As a user, I would like the program to suggest a handicap while competing with others, so competition with others can be fairly measured even though we are at different skill levels.                                                       | C                |          |        |
 | **49**  | As a user that has a registered handicap, I want to be able to see directly how many points I will get for the basket.                                                                                                                       | C                |          |        |
 | **50**  | As a user, I would like to register my discs in the app so I can see my own collection and share them with other users.                                                                                                                      | C                |          |        |
@@ -219,26 +219,26 @@ The functional requirements listed in _**"Minimal Viable Product"**_ are set up 
 | **53**  | As a user, I want to be able to access the mobile phone camera through the app to take a picture I can save with the game I just played so I can attach a photo to the log of the game.                                                      | C                |          |        |
 | **54**  | As a user, I want to see how the weather forecast is for the course I am about to play so I can judge the conditions correctly.                                                                                                              | C                |          |        |
 | **55**  | As a user, I want to be able to see how the weather has historically influenced my scores so I can see how well I do in certain weather conditions.                                                                                          | C                |          |        |
-| **56**  | As a user, I want to be able to bet against my friends on the outcome of the match. Using an Ethereum (blockchain) smart contract that automatically deposits money to the winners account.                                                  | C                |          |        |
+| **56**  | As a user, I want to be able to bet against my friends on the outcome of the match. Using an _Ethereum_ (blockchain) smart contract that automatically deposits money to the winners account.                                                | C                |          |        |
 | **57**  | As a user, I want to be able to have a league that has many players, playing on different courses over a long period of time so I can have a big tournament over a long period of time with my friends.                                      | C                |          |        |
 | **58**  | As a tournament organizer, I want to be able to access the score of all tournament players.                                                                                                                                                  | C                |          |        |
-| **59**  | As a tournament player, I want to be able to register to a tournament via the openFOLF app.                                                                                                                                                  | C                |          |        |
-| **60**  | As a tournament organizer, I want to be able to create a new tournament with the openFOLF app.                                                                                                                                               | C                |          |        |
-| **61**  | As a tournament player, I want to be able to log my score on openFOLF and give any third parties access to my live score.                                                                                                                    | C                |          |        |
+| **59**  | As a tournament player, I want to be able to register to a tournament via the _openFOLF_ app.                                                                                                                                                | C                |          |        |
+| **60**  | As a tournament organizer, I want to be able to create a new tournament with the _openFOLF_ app.                                                                                                                                             | C                |          |        |
+| **61**  | As a tournament player, I want to be able to log my score on _openFOLF_ and give any third parties access to my live score.                                                                                                                  | C                |          |        |
 | **301** | As a user I would like to register my tee, and select from what tee box I’m playing from, to better keep track of my statistics.                                                                                                             | C                | 13       |        |
 
 ### Non-functional Requirements
 
-The non-functional requirements specify those requirements that can be used to judge the operation of the system, rather than specific behaviors. Because these requirements will often impact the application as a whole, specific uses of these requirements will not be linked to the use cases in 4.3 even though applicable, except in a couple of cases when deemed necessary to be explicit.
+The non-functional requirements specify those requirements that can be used to judge the operation of the system, rather than specific behaviors. Because these requirements will often impact the application as a whole, specific uses of these requirements will not be linked to the use cases later in the chapter even though applicable, except in a couple of cases when deemed necessary to be explicit.
 
 | No.    | User stories                                                                                                                                                   | Priority (A/B/C) | Use Case | Status |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------- | ------ |
 | **62** | The application must be usable on any mobile operating system with browser capabilities.                                                                       | A                |          | Done   |
-| **63** | The application shall keep personal information secret and comply with Icelandic law and EU’s General Data Protection Regulations.                             | A                |          | Done   |
+| **63** | The application shall keep personal information secret and comply with _Icelandic law and EU’s General Data Protection Regulations_.                           | A                |          | Done   |
 | **64** | The application must be usable on any desktop computer with browser capabilities.                                                                              | A                |          | Done   |
 | **65** | The application must be scalable.                                                                                                                              | A                |          | Done   |
 | **66** | The application shall support at least 100 users at any given time.                                                                                            | A                |          | Done   |
-| **67** | The www.openfolf.net website must be optimized for search engine rankings, SEO friendly.                                                                       | A                | 1        | Done   |
+| **67** | The openfolf.net website must be optimized for search engine rankings, _SEO_ friendly.                                                                         | A                | 1        | Done   |
 | **68** | The system must send notifications to admins if the webpage, application or connected service go down.                                                         | A                |          | Done   |
 | **69** | The application shall change the score of players playing a round in real time.                                                                                | A                |          | Done   |
 | **70** | The application must have the capability of working as any other locally installed app such as having push notifications and can be added to user home screen. | A                | 2, 11    | Done   |
@@ -254,11 +254,11 @@ The non-functional requirements specify those requirements that can be used to j
 
 The use cases below try to envelop as many A requirements and edge cases as possible and should give a clear image of the _application´s_ core functionality as the team viewed it in the beginning of sprint 3 when programming began.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
-A new user, searches for openFOLF on a search engine, launches the app and signs up.
+A new user, searches for _openFOLF_ on a search engine, launches the app and signs up.
 
 **Number:** 1
 
@@ -271,9 +271,9 @@ A new user, searches for openFOLF on a search engine, launches the app and signs
 
 **Description (base flow):**
 
-A user has heard of an app called openFOLF. He uses a search engine and looks for openFOLF and finds openfolf.net.
+A user has heard of an app called _openFOLF_. He uses a search engine and looks for _openFOLF_ and finds openfolf.net.
 
-On the website there are some general information about openFOLF and a launch app button. He presses launch app and opens the application at the address app.openfolf.net. He sees a login page and from there he selects signup. There he registers an email, username and password and selects register.
+On the website there are some general information about _openFOLF_ and a launch app button. He presses launch app and opens the application at the address app.openfolf.net. He sees a login page and from there he selects _SignUp_. There he registers an email, a username and a password and selects _SignUp_.
 
 He is greeted with a screen asking him to confirm his email. He goes to his email and there is a link that takes him to the front page of the application.
 
@@ -283,7 +283,7 @@ He is greeted with a screen asking him to confirm his email. He goes to his emai
 - A user, from his browser, goes straight to app.openfolf.net
 - A user tries to find it in the app store on their mobile device but are unable to find it. Because of that they search for it on a search engine.
 - User enters a wrong password or username, gets a warning message.
-- The user is already a registered user (see use case 2: A registered user logs in to openFOLF).
+- The user is already a registered user (see use case 2: A registered user logs in to _openFOLF_).
 
 **Postcondition:**
 
@@ -295,11 +295,11 @@ He is greeted with a screen asking him to confirm his email. He goes to his emai
 
 **Authors:** Dagur, Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
-A registered user logs in to openFOLF.
+A registered user logs in to _openFOLF_.
 
 **Number:** 2
 
@@ -317,7 +317,7 @@ User goes to openfolf.net and selects launch app. In the application he is greet
 **Alternative flow:**
 
 - User goes straight to app.openfolf.net to open the application.
-- The user, from his mobile selects the openFOLF icon on his home screen. He sees a splash screen.
+- The user, from his mobile selects the _openFOLF_ icon on his home screen. He sees a splash screen.
 - The application remembers the user and automatically logs him in and goes straight to the application’s main screen.
 - The user uses email/username and password to login.
 - The user´s email/username or password is incorrect.
@@ -332,7 +332,7 @@ User goes to openfolf.net and selects launch app. In the application he is greet
 
 **Authors:** Dagur, Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -348,11 +348,11 @@ User selects a course he is going to play on.
 
 **Description (base flow):**
 
-From the openFOLF home screen he selects Play game. He is greeted with the Select Course page. There the user sees a list of available courses in alphabetical order and at the top is play unspecified course. He selects a course in the list he wants to play. The user is redirected to the Game lobby page.
+From the _openFOLF_ home screen he selects Play game. He is greeted with the Select Course page. There the user sees a list of available courses in alphabetical order and at the top is play unspecified course. He selects a course in the list he wants to play. The user is redirected to the Game lobby page.
 
 **Alternative flow:**
 
-- The user has allowed openFOLF to use his geolocation and the list of available courses is displayed in order of proximity (Req 25).
+- The user has allowed _openFOLF_ to use his geolocation and the list of available courses is displayed in order of proximity (Req 25).
 - The user has not allowed geolocation but has already played several courses before. Those courses recently played are listed with the most recently played first then the alphabetical order.
 - The user does not have a network connection; the courses available when he was last connected are listed in alphabetical order.
 - The user does not want to select a specific course or does not find his course on the list, selects play unspecified course. Gets redirected to a set custom course (see use case 10).
@@ -367,7 +367,7 @@ From the openFOLF home screen he selects Play game. He is greeted with the Selec
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -405,7 +405,7 @@ From Select courses the user is directed to Game lobby. There he sees a screen w
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -440,7 +440,7 @@ From the main screen of the application the user selects Join game. There he is 
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -475,7 +475,7 @@ From any QR scanner application the user scans the QR code of the user hosting t
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -516,7 +516,7 @@ After finishing the round, the user enters end round. He gets a screen asking hi
 
 **Authors:** Arnar, Ægir.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -556,7 +556,7 @@ When the round is finished the user that created the lobby is asked if they want
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -591,7 +591,7 @@ From the main menu a user selects Play Game. Is greeted with the Select Course p
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -626,7 +626,7 @@ From the openFOLF home screen he selects Play game. He is greeted with the Selec
 
 **Authors:** Arnar, Ægir.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -663,7 +663,7 @@ From the Select courses the user is directed to Game lobby. There he sees a scre
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 
@@ -699,7 +699,7 @@ User 1 starts a Game lobby and the lobby code is displayed. User 2 joins the gam
 
 **Authors:** Arnar.
 
----
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #005737, rgba(0, 0, 0, 0));" />
 
 **Name:**
 

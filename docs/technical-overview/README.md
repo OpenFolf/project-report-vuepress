@@ -1,10 +1,10 @@
 # Technical Overview
 
-In this chapter we first show the flow diagram of the _application_ that shows how a user may navigate between different components. Then we briefly talk about the workflow we chose for this project, the Jamstack. Thereafter we list the programming languages used and what coding guidelines we followed and what version control was used. Next the technology stack is shown and explained.
+In this chapter we first show the flow diagram of the _application_ that shows how a user may navigate between different components. Then we briefly talk about the workflow we chose for this project, the _Jamstack_. Thereafter we list the programming languages used and what coding guidelines we followed and what version control was used. Next the technology stack is shown and explained.
 
 ## Flow diagram
 
-Since we are making a progressive web application, openFOLF can be thought of as two domains, the _website_ and the _application_. When a user goes to [openFOLF.net](https://www.openfolf.net/) he will be greeted with the landing page. There he will find general information about openFOLF (in this report from now on referred to as the _website_). When he clicks the “launch app” button he will be transferred to the _application_ hosted on [app.openFOLF.net](https://app.openfolf.net/), that is a self-containing ecosystem that can be used as any other native app. Ideally a user would open [app.openFOLF.net](https://app.openfolf.net/) and save it to his home screen.
+Since we are making a progressive web application, _openFOLF_ can be thought of as two domains, the _website_ and the _application_. When a user goes to [openFOLF.net](https://www.openfolf.net/) he will be greeted with the landing page. There he will find general information about _openFOLF_ (in this report from now on referred to as the _website_). When he clicks the “launch app” button he will be transferred to the _application_ hosted on [app.openFOLF.net](https://app.openfolf.net/), that is a self-containing ecosystem that can be used as any other native app. Ideally a user would open [app.openFOLF.net](https://app.openfolf.net/) and save it to his home screen.
 
 <div style="display: flex; flex-flow: row; justify-content: center;">
   <img src="/images/flow-diagram.png" alt="Flow Diagram for openFOLF.net"  />
@@ -14,15 +14,15 @@ _Figure 1:_ Flow diagram of the website **openfolf.net** and the application hos
 
 ## Jamstack
 
-The Jamstack is an architecture or an approach to building websites and applications. It brings together JavaScript, APIs and markup, but those are the three core components used to create websites that are fast and highly dynamic. In essence Jamstack is an approach on how to build single page websites. But they are only single page in the technical meaning of the word because the site has only one HTML site. But a single page application can be highly dynamic and contain number of routes from the user’s perspective. In contrast to the more traditional, server site rendered websites, single page applications rely on the end user’s browser to do most of the heavy lifting. Because most of the logic is contained within the _application_, when a user wants to route to a different page, the _application_ does not have to wait for some remote server to serve up the content and redirect the user, but has the potential to redirect the user instantly. This makes single page applications responsive and Jamstack sites are well suited to meet the demands of today’s mobile-first web.
+The _Jamstack_ is an architecture or an approach to building websites and applications. It brings together _JavaScript_, _APIs_ and markup, but those are the three core components used to create websites that are fast and highly dynamic. In essence _Jamstack_ is an approach on how to build single page websites. But they are only single page in the technical meaning of the word because the site has only one _HTML_ site. But a single page application can be highly dynamic and contain number of routes from the user’s perspective. In contrast to the more traditional, server site rendered websites, single page applications rely on the end user’s browser to do most of the heavy lifting. Because most of the logic is contained within the _application_, when a user wants to route to a different page, the _application_ does not have to wait for some remote server to serve up the content and redirect the user, but has the potential to redirect the user instantly. This makes single page applications responsive and _Jamstack_ sites are well suited to meet the demands of today’s mobile-first web.
 
-The Jamstack isn’t any one specific technology and it is not driven by any large company. There is not a standards body that controls or defines it but instead the Jamstack is a movement, a community collection of best practices and workflows that result in high speed websites that are a joy to work on.
+The _Jamstack_ isn’t any one specific technology and it is not driven by any large company. There is not a standards body that controls or defines it but instead the _Jamstack_ is a movement, a community collection of best practices and workflows that result in high speed websites that are a joy to work on.
 
-Some of the characteristics of the Jamstack:
+Some of the characteristics of the _Jamstack_:
 
-- Resilient to heavy traffic and globally distributed via CDN
-- Developer friendly Git based workflows
-- Modular design and consumes other services via APIs
+- Resilient to heavy traffic and globally distributed via _CDN_
+- Developer friendly _Git_ based workflows
+- Modular design and consumes other services via _APIs_
 
 ## Version Control
 
@@ -34,7 +34,7 @@ The _application_ was written in _ECMAScript_, the standardized _JavaScript_. Wi
 
 ### Node.js
 
-Both front- and back-ends of the application rely on _Node.js_ which is a cross-platform _JavaScript_ runtime environment. In _Node.js_ we can use the new _ECMAScript_ standards without any problems, it has an abundance of different packages and it is a popular tool for any kind of project. By using only one programming language, the whole team could write all aspects of the application without the headache of making different programming languages and paradigms compatible with each other.
+Both front- and back-ends of the application rely on _Node.js_ which is a cross-platform _JavaScript_ runtime environment. In _Node.js_ we can use the new _ECMAScript_ standards without any problems, it has an abundance of different packages and it is a popular tool for any kind of project. By using only one programming language, the whole team could write all aspects of the _application_ without the headache of making different programming languages and paradigms compatible with each other.
 
 ## Coding Guidelines
 
@@ -46,11 +46,11 @@ Team members used _Visual Studio Code_ to write and manage all source code. We c
 
 ## CI/CD
 
-A big part of the Jamstack methodology is CI/CD or _continuous integration_ and _continuous delivery_. The concept of always adding to your product in small increments in a safe and predictable manner.
+A big part of the _Jamstack_ methodology is _CI/CD_ or _continuous integration_ and _continuous delivery_. The concept of always adding to your product in small increments in a safe and predictable manner.
 
 ### Continuous integration
 
-In order to establish a unified codebase we set up our git workflow in such a way that we implemented small changes regularly into a central repository. Before the code was committed we used _ESLint_ and _Prettier_ to automatically adapt our code to predefined rules. This way the code would have a uniformed quality regardless of it being developed in different platforms and tools.
+In order to establish a unified codebase we set up our _Git_ workflow in such a way that we implemented small changes regularly into a central repository. Before the code was committed we used _ESLint_ and _Prettier_ to automatically adapt our code to predefined rules. This way the code would have a uniformed quality regardless of it being developed in different platforms and tools.
 
 In this way we continuously integrated the code from team members into a unified codebase with a uniformed structure.
 
@@ -68,7 +68,7 @@ We implemented the unit tests with _Vue Test Utils_, a wrapper for the _Jest_ te
 
 ## Search Engine Optimization
 
-One of the functional requirement was to ensure that _Google_ and other search engines know what openFOLF is, we had to make sure that all the meta information for [openfolf.net](https://www.openfolf.net/) and [docs.openfolf.net](https://docs.openfolf.net) was according to specification. Modern web crawlers look for meta data when they visit an URL. There are many different ways to list your meta data, we chose to cover some of the most used:
+One of the functional requirement was to ensure that _Google_ and other search engines know what _openFOLF_ is, we had to make sure that all the meta information for [openfolf.net](https://www.openfolf.net/) and [docs.openfolf.net](https://docs.openfolf.net) was according to specification. Modern web crawlers look for meta data when they visit an URL. There are many different ways to list your meta data, we chose to cover some of the most used:
 
 - _Open Graph Protocol_ - Used by _Facebook_
 - _Schema.org Markup_ - Used by _Google_
@@ -84,7 +84,7 @@ For the front-end of the _application_ we were looking for something approachabl
 
 ## Back-end
 
-For the back-end of the _application_ we used different services from _Amazon Web Services (AWS)_. _Amazon S3_ was used to store the _Vue.js_ front-end. _CloudFront_ is a web service that was used to speed up distribution of our front-end by delivering our content through a worldwide network of data centers. _Route53_ addresses domain service requests to our website. _Amazon Cognito_ was used for both the user and API authentication. We started out planning to map out all our API endpoints through _Amazon API Gateway_ but in sprint 3 decided to add _GraphQL_ through _AWS AppSync_ to our stack. The data is then stored in the NoSQL database from Amazon called _DynamoDB_.
+For the back-end of the _application_ we used different services from _Amazon Web Services (AWS)_. _Amazon S3_ was used to store the _Vue.js_ front-end. _CloudFront_ is a web service that was used to speed up distribution of our front-end by delivering our content through a worldwide network of data centers. _Route53_ addresses domain service requests to our website. _Amazon Cognito_ was used for both the user and _API_ authentication. We started out planning to map out all our _API_ endpoints through _Amazon API Gateway_ but in sprint 3 decided to add _GraphQL_ through _AWS AppSync_ to our stack. The data is then stored in the _NoSQL_ database from _Amazon_ called _DynamoDB_.
 
 <div style="display: flex; flex-flow: row; justify-content: center;">
   <img src="/images/tech-stack.png" alt="Tech Stack for openFOLF.net"  />
@@ -94,19 +94,19 @@ _Figure 2:_ Technical stack
 
 ## Database
 
-We put a lot of importance on flexibility of the application and being able to adapt and continue to evolve the structure of the data we store. When designing the database for the application it was therefore important to emphasize flexibility and scaling with possible tradeoffs in performance.
+We put a lot of importance on flexibility of the _application_ and being able to adapt and continue to evolve the structure of the data we store. When designing the database for the _application_ it was therefore important to emphasize flexibility and scaling with possible tradeoffs in performance.
 
-We received permission from [DGCourseReview](https://www.dgcoursereview.com/) to use their API to collect data about courses in Iceland and use in the development of the app. But we eventually want to replace their data with our own. Either through our collaboration with folf entities in Iceland or our own data collection.
+We received permission from [DGCourseReview](https://www.dgcoursereview.com/) to use their _API_ to collect data about courses in Iceland and use in the development of the _application_. But we eventually want to replace their data with our own. Either through our collaboration with folf entities in Iceland or our own data collection.
 
 ### SQL vs. NoSQL
 
-We decided to use a NoSQL database over using a traditional relational SQL database. In a NoSQL database you can store data without carefully defining the structure upfront and you are able to add fields to the database tables without restructuring the database schema. This provided us with more flexibility and we were able to avoid extensive upfront planning of the database.
+We decided to use a _NoSQL_ database over using a traditional relational _SQL_ database. In a _NoSQL_ database you can store data without carefully defining the structure upfront and you are able to add fields to the database tables without restructuring the database schema. This provided us with more flexibility and we were able to avoid extensive upfront planning of the database.
 
-Another determining factor in choosing NoSQL over SQL was NoSQL’s ability to scale easily. SQL databases are designed primarily to be run on a single server and are therefore not easy to scale. The data in a NoSQL database is less structured and each stored object is relatively independent. This enables NoSQL databases to scale horizontally, you just add more and more servers when needed.
+Another determining factor in choosing _NoSQL_ over _SQL_ was _NoSQL’s_ ability to scale easily. _SQL_ databases are designed primarily to be run on a single server and are therefore not easy to scale. The data in a _NoSQL_ database is less structured and each stored object is relatively independent. This enables _NoSQL_ databases to scale horizontally, you just add more and more servers when needed.
 
 ### DynamoDB
 
-For our NoSQL database we are using _DynamoDB_ from _Amazon Web Services_. With _DynamoDB_ being part of the _AWS_ ecosystem it enabled us to easily integrate it with our app. _DynamoDB_ has a simple API that you can easily interact with, for example in _Lambda_ functions. It also easily enables you to have a large amount of storage and extremely high read/write speeds. Only paying on demand for each request and not having to manage uptime of the database. With _DynamoDB_ the horizontal scaling of the database happens automatically giving us almost infinite scaling ability, with little or no loss in performance.
+For our _NoSQL_ database we are using _DynamoDB_ from _Amazon Web Services_. With _DynamoDB_ being part of the _AWS_ ecosystem it enabled us to easily integrate it with our _application_. _DynamoDB_ has a simple _API_ that you can easily interact with, for example in _Lambda_ functions. It also easily enables you to have a large amount of storage and extremely high read/write speeds. Only paying on demand for each request and not having to manage uptime of the database. With _DynamoDB_ the horizontal scaling of the database happens automatically giving us almost infinite scaling ability, with little or no loss in performance.
 
 ### ER diagram
 
@@ -120,9 +120,9 @@ _Figure 3:_ ER diagram
 
 ### GraphQL
 
-The main drawback with choosing a NoSQL database schema over SQL is that querying the data can be more complex and have less performance. In order to simplify querying of the database and optimize query performance we decided to use _GraphQL_.
+The main drawback with choosing a _NoSQL_ database schema over _SQL_ is that querying the data can be more complex and have less performance. In order to simplify querying of the database and optimize query performance we decided to use _GraphQL_.
 
-_GraphQL_ is a query language and a server-side runtime for executing queries on API’s. Queries are executed by using a type system which is defined for your desired data. _GraphQL_ offers three types of requests, mutations for mutating the data, queries for querying the data and subscriptions for subscribing through a websocket connection to any changes in the database. Enabling real time representation of changes in the database. _GraphQL_ is not tied to any specific database and all queries go through a single endpoint. This offers the ability of switching or combining data sources without having to make changes in the front-end.
+_GraphQL_ is a query language and a server-side runtime for executing queries on _API’s_. Queries are executed by using a type system which is defined for your desired data. _GraphQL_ offers three types of requests, mutations for mutating the data, queries for querying the data and subscriptions for subscribing through a websocket connection to any changes in the database. Enabling real time representation of changes in the database. _GraphQL_ is not tied to any specific database and all queries go through a single endpoint. This offers the ability of switching or combining data sources without having to make changes in the front-end.
 
 ### AWS AppSync
 
@@ -132,8 +132,8 @@ _AWS AppSync_ is highly secure and scalable, being able to handle a large number
 
 ### GraphQL Schema
 
-In Appendix 1 is a rough representation of the _GraphQL_ schema in our app, this can be easily changed and has been changed many times in the development process.
+In Appendix 2 is a rough representation of the _GraphQL_ schema in our _application_, this can be easily changed and has been changed many times in the development process.
 
 ## Documentation
 
-Along with _the web application_, we made a report documenting the design and production of the _application_. We set up a dedicated website for the report made with _VuePress_, the official _Vue.js_ documentation tool. This turns the report into a PWA and makes reading it on mobile devices enjoyable. Furthermore, the option to install the docs locally for off-line consumption is possible on supported browsers. This is accessible at [docs.openfolf.net](https://docs.openfolf.net/).
+Along with _the web application_, we made a report documenting the design and production of the _application_. We set up a dedicated website for the report made with _VuePress_, the official _Vue.js_ documentation tool. This turns the report into a _PWA_ and makes reading it on mobile devices enjoyable. Furthermore, the option to install the docs locally for off-line consumption is possible on supported browsers. This is accessible at [docs.openfolf.net](https://docs.openfolf.net/).
