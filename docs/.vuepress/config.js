@@ -76,6 +76,14 @@ module.exports = {
         collapsable: false,
         children: ['/conclusion/'],
       },
+      {
+        collapsable: false,
+        children: ['/appendix-1/'],
+      },
+      {
+        collapsable: false,
+        children: ['/appendix-2/'],
+      },
     ],
   },
 };
